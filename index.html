@@ -182,7 +182,10 @@ button, input, textarea, select { font: inherit; }
   object-fit: cover;
   object-position: 50% 50%;
   filter: grayscale(100%) contrast(.97) brightness(1.03);
-}
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;}
 .hero-media figcaption {
   height: 44px;
   display: flex;
@@ -595,7 +598,7 @@ a.press-logo:focus-visible {
       </div>
 
       <figure class="hero-media">
-        <img class="hero-photo" src="/profile-photo.webp" alt="Ilir Laro speaking on a panel" width="1200" height="800" fetchpriority="high" decoding="async">
+        <img class="hero-photo" src="/profile-photo.webp" alt="Ilir Laro speaking on a panel" width="1200" height="800" fetchpriority="high" decoding="async" draggable="false">
         <figcaption>PANEL / EVENT PHOTOGRAPH</figcaption>
       </figure>
     </section>
