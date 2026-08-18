@@ -255,7 +255,7 @@ button, input, textarea, select { font: inherit; }
   border-radius: 50%;
 }
 
-.press { padding-top: 34px; padding-bottom: 45px; }
+.press { padding-top: 34px; padding-bottom: 28px; }
 .section-intro { margin: 26px 0 0; color: var(--muted); font-size: 13px; }
 .press-logos {
   margin-top: 28px;
@@ -296,7 +296,10 @@ a.press-logo:focus-visible {
 }
 .section-heading.compact { font-size: clamp(30px, 2.8vw, 40px); }
 
-.work { padding-top: 42px; }
+.work { padding-top: 34px; }
+.press + .work {
+  margin-top: 34px;
+}
 .case-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -470,6 +473,7 @@ a.press-logo:focus-visible {
   .hero-media figcaption { height: 42px; padding-inline: 14px; font-size: 8px; }
 
   .section-space { margin-top: 58px; }
+  .press + .work { margin-top: 28px; padding-top: 28px; }
   .brand-strip, .press { padding-top: 28px; padding-bottom: 34px; }
   .company-logos { grid-template-columns: 1fr; }
   .brand { min-height: 30px; }
@@ -544,7 +548,7 @@ a.press-logo:focus-visible {
 </script>
 </head>
 <body>
-  <!-- ilirlaro.com homepage build v3: SEO metadata, favicon, hero crop, brand row, press links -->
+  <!-- ilirlaro.com homepage build v4: tightened press-to-work spacing, SEO metadata, favicon, hero crop, brand row, press links -->
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="top">
