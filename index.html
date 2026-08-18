@@ -170,7 +170,7 @@ button, input, textarea, select { font: inherit; }
 .hero-media {
   margin: 0;
   width: 100%;
-  max-width: 410px;
+  max-width: 425px;
   justify-self: end;
   background: #d5d1c8;
   overflow: hidden;
@@ -402,34 +402,37 @@ a.press-logo:focus-visible {
 
 .advisory { padding-top: 16px; }
 .advisory-panel {
-  min-height: 470px;
-  padding: 43px 38px 44px;
+  min-height: 300px;
+  padding: 42px;
   background: var(--dark);
   color: var(--white);
 }
-.advisory-panel h2 {
-  margin: 34px 0 0;
-  font-size: clamp(36px, 4vw, 55px);
-  line-height: 1;
-  letter-spacing: -0.04em;
-  font-weight: 500;
-}
-.advisory-panel > p:not(.eyebrow) {
-  margin: 25px 0 0;
-  color: #b9b6ae;
-  font-size: 14px;
-  line-height: 1.65;
-}
-.advisory-types {
-  margin-top: 48px;
-  max-width: 700px;
+.advisory-panel-inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
-  font-size: 8px;
-  color: #d9d6ce;
+  grid-template-columns: minmax(0, 1.8fr) minmax(220px, .8fr);
+  gap: 64px;
+  align-items: center;
+  min-height: 216px;
 }
-.advisory-panel .button { margin-top: 46px; min-height: 43px; padding-inline: 22px; font-size: 10px; }
+.advisory-copy h2 {
+  margin: 24px 0 0;
+}
+.advisory-copy > p:not(.eyebrow) {
+  margin: 20px 0 0;
+  max-width: 760px;
+}
+.advisory-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.advisory-action .button {
+  margin: 0;
+  min-height: 43px;
+  padding-inline: 22px;
+  font-size: 10px;
+  white-space: nowrap;
+}
 
 .about { padding-top: 30px; padding-bottom: 62px; }
 .about-copy { margin: 25px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
@@ -554,6 +557,22 @@ a.press-logo:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
+}
+
+
+@media (max-width: 800px) {
+  .advisory-panel {
+    min-height: 0;
+    padding: 34px 28px;
+  }
+  .advisory-panel-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: 0;
+  }
+  .advisory-action {
+    justify-content: flex-start;
+  }
 }
 
 </style>
@@ -740,15 +759,16 @@ a.press-logo:focus-visible {
 
     <section class="advisory shell section-space" id="advisory" aria-labelledby="advisory-title">
       <div class="advisory-panel">
-        <p class="eyebrow eyebrow-light">ADVISORY</p>
-        <h2 id="advisory-title">Work with me.</h2>
-        <p>I work with founders and leadership teams across crypto, Web3 and fintech on practical growth problems, from taking a product to market to entering new markets.</p>
-        <div class="advisory-types" aria-label="Advisory services">
-          <span>GO-TO-MARKET STRATEGY</span>
-          <span>GROWTH MARKETING</span>
-          <span>INTERNATIONAL EXPANSION</span>
+        <div class="advisory-panel-inner">
+          <div class="advisory-copy">
+            <p class="eyebrow eyebrow-light">ADVISORY</p>
+            <h2 id="advisory-title">Work with me.</h2>
+            <p>I work with founders and leadership teams across crypto, Web3 and fintech on practical growth problems, from taking a product to market to entering new markets.</p>
+          </div>
+          <div class="advisory-action">
+            <a class="button button-light" href="/advisory/">Explore advisory</a>
+          </div>
         </div>
-        <a class="button button-light" href="/advisory/">Explore advisory</a>
       </div>
     </section>
 
