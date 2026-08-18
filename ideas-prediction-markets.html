@@ -1,14 +1,14 @@
 ---
-permalink: /advisory/
+permalink: /ideas/prediction-markets/
 ---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Advisory | Ilir Laro</title>
-<meta name="description" content="Advisory for crypto, Web3 and fintech teams across go-to-market strategy, growth marketing and international expansion.">
-<link rel="canonical" href="https://ilirlaro.com/advisory/">
+<title>What product teams can learn from prediction markets | Ilir Laro</title>
+<meta name="description" content="Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.">
+<link rel="canonical" href="https://ilirlaro.com/ideas/prediction-markets/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
 <style>
 :root{
@@ -533,376 +533,231 @@ footer{padding:62px 0 42px}
 }
 
 
-/* Advisory page */
-.advisory-hero{
-  padding:96px 0 82px;
+/* Editorial article */
+.idea-article-hero{
+  padding:88px 0 66px;
 }
-.advisory-hero-grid{
-  display:grid;
-  grid-template-columns:190px minmax(0,1fr);
-  gap:36px;
-}
-.advisory-hero .eyebrow{margin-top:10px}
-.advisory-hero h1{
-  margin:0;
-  max-width:1000px;
-  font-size:clamp(54px,6.7vw,96px);
-  line-height:.96;
-  letter-spacing:-.062em;
-  font-weight:500;
-}
-.advisory-hero .lead{
-  grid-column:2;
-  max-width:790px;
-  margin:34px 0 0;
-  color:var(--muted);
-  font-size:21px;
-  line-height:1.55;
-  letter-spacing:-.018em;
-}
-
-.advisory-context{
-  border-top:1px solid var(--line);
-  padding:38px 0 78px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-}
-.advisory-context .label{
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.advisory-context p{
-  margin:0 0 23px;
-  font-size:17px;
-  line-height:1.76;
-  color:#2a2926;
-}
-
-.service-section{
-  border-top:1px solid var(--line);
-  padding:36px 0 88px;
-}
-.service-head{
-  display:grid;
-  grid-template-columns:190px 1fr;
-  gap:36px;
-  margin-bottom:40px;
-}
-.service-head .label{
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.service-head h2{
-  margin:0;
-  max-width:760px;
-  font-size:clamp(38px,4.4vw,60px);
-  line-height:1.03;
-  letter-spacing:-.048em;
-  font-weight:500;
-}
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  border:1px solid var(--line);
-  background:var(--line);
-}
-.service-card{
-  min-height:440px;
-  background:var(--bg);
-  padding:28px;
-  display:flex;
-  flex-direction:column;
-}
-.service-card:nth-child(2){background:#e8e5da}
-.service-card:nth-child(3){background:var(--dark);color:var(--white)}
-.service-card .num{
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.1em;
-}
-.service-card h3{
-  margin:58px 0 18px;
-  font-size:31px;
-  line-height:1.04;
-  letter-spacing:-.042em;
-  font-weight:550;
-}
-.service-card > p{
-  margin:0;
-  font-size:13px;
-  line-height:1.62;
-  color:var(--muted);
-}
-.service-card:nth-child(3) > p{color:#aaa79f}
-.service-card ul{
-  margin:auto 0 0;
-  padding:28px 0 0 17px;
-  font-size:12px;
-  line-height:1.58;
-  color:var(--muted);
-}
-.service-card:nth-child(3) ul{color:#c5c2ba}
-.service-card li{margin:7px 0}
-
-.principles{
-  border-top:1px solid var(--line);
-  padding:36px 0 88px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-}
-.principles .label{
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.principles h2{
-  margin:0 0 26px;
-  font-size:42px;
-  line-height:1.06;
-  letter-spacing:-.045em;
-  font-weight:500;
-}
-.principles p{
-  margin:0 0 23px;
-  font-size:17px;
-  line-height:1.76;
-  color:#2a2926;
-}
-
-.fit-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:var(--line);
-  border:1px solid var(--line);
-}
-.fit-item{
-  min-height:180px;
-  padding:22px;
-  background:var(--bg);
-}
-.fit-item b{
-  display:block;
-  font-size:13px;
-  margin-bottom:12px;
-}
-.fit-item span{
-  display:block;
-  font-size:11px;
-  line-height:1.55;
-  color:var(--muted);
-}
-
-.advisory-why{
-  border-top:1px solid var(--line);
-  padding:36px 0 88px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-}
-.advisory-why .label{
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-}
-.advisory-why p{
-  margin:0 0 23px;
-  font-size:17px;
-  line-height:1.76;
-  color:#2a2926;
-}
-
-.contact-panel{
-  margin-bottom:74px;
-  background:var(--dark);
-  color:var(--white);
-  padding:58px 62px;
+.article-topline{
   display:flex;
   justify-content:space-between;
-  align-items:flex-end;
-  gap:50px;
+  gap:24px;
+  align-items:center;
+  margin-bottom:50px;
 }
-.contact-panel h2{
-  margin:0;
-  max-width:720px;
-  font-size:clamp(40px,5vw,70px);
-  line-height:1;
-  letter-spacing:-.052em;
-  font-weight:500;
-}
-.contact-panel p{
-  margin:18px 0 0;
-  max-width:590px;
-  color:#aaa79f;
-  font-size:13px;
-  line-height:1.6;
-}
-.contact-links{
-  flex:0 0 auto;
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-  font-size:13px;
+.article-back{
+  font-size:11px;
   font-weight:650;
 }
+.article-meta{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.idea-article-hero h1{
+  margin:0;
+  max-width:1020px;
+  font-size:clamp(52px,6.2vw,88px);
+  line-height:.98;
+  letter-spacing:-.058em;
+  font-weight:500;
+}
+.idea-article-hero .deck{
+  margin:34px 0 0;
+  max-width:790px;
+  font-size:20px;
+  line-height:1.58;
+  color:var(--muted);
+  letter-spacing:-.015em;
+}
+
+.article-layout{
+  display:grid;
+  grid-template-columns:190px minmax(0,790px);
+  gap:36px;
+  border-top:1px solid var(--line);
+  padding:58px 0 92px;
+}
+.article-side{
+  position:sticky;
+  top:32px;
+  align-self:start;
+}
+.article-side .label{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.article-side p{
+  margin:16px 0 0;
+  max-width:140px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.55;
+}
+.idea-copy h2{
+  margin:68px 0 22px;
+  font-size:35px;
+  line-height:1.08;
+  letter-spacing:-.04em;
+  font-weight:550;
+}
+.idea-copy h2:first-child{margin-top:0}
+.idea-copy p{
+  margin:0 0 24px;
+  font-size:17px;
+  line-height:1.78;
+  color:#2a2926;
+}
+.idea-copy ul{
+  margin:5px 0 28px;
+  padding-left:20px;
+  color:#2a2926;
+}
+.idea-copy li{
+  margin:9px 0;
+  font-size:15px;
+  line-height:1.65;
+}
+.idea-callout{
+  margin:44px 0;
+  padding:32px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.idea-callout p{
+  margin:0!important;
+  font-size:28px!important;
+  line-height:1.38!important;
+  letter-spacing:-.032em;
+  color:var(--ink)!important;
+  font-weight:500;
+}
+.article-next{
+  border-top:1px solid var(--line);
+  padding:34px 0 80px;
+}
+.article-next .small{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.article-next a{
+  margin-top:20px;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:flex-end;
+}
+.article-next h2{
+  margin:0;
+  max-width:700px;
+  font-size:38px;
+  line-height:1.05;
+  letter-spacing:-.04em;
+  font-weight:550;
+}
+.article-next span{font-size:13px;font-weight:650;white-space:nowrap}
 
 @media(max-width:900px){
-  .advisory-hero-grid,
-  .advisory-context,
-  .service-head,
-  .principles,
-  .advisory-why{
-    grid-template-columns:1fr;
-    gap:22px;
-  }
-  .advisory-hero .lead{grid-column:1}
-  .service-grid{grid-template-columns:1fr}
-  .service-card{min-height:360px}
-  .fit-grid{grid-template-columns:1fr}
-  .contact-panel{flex-direction:column;align-items:flex-start}
+  .article-layout{grid-template-columns:1fr;gap:28px}
+  .article-side{position:static}
+  .article-side p{max-width:560px}
 }
 @media(max-width:640px){
-  .advisory-hero{padding:64px 0 58px}
-  .advisory-hero h1{font-size:clamp(46px,13vw,70px)}
-  .advisory-hero .lead{font-size:18px}
-  .advisory-context,
-  .service-section,
-  .principles,
-  .advisory-why{padding-bottom:64px}
-  .contact-panel{padding:40px 28px}
+  .idea-article-hero{padding:60px 0 50px}
+  .article-topline{margin-bottom:36px;align-items:flex-start}
+  .idea-article-hero h1{font-size:clamp(44px,13vw,68px)}
+  .idea-article-hero .deck{font-size:18px}
+  .article-layout{padding:44px 0 64px}
+  .idea-copy p{font-size:16px;line-height:1.73}
+  .idea-copy h2{font-size:30px;margin-top:54px}
+  .idea-callout p{font-size:23px!important}
+  .article-next a{align-items:flex-start;flex-direction:column}
+  .article-next h2{font-size:31px}
 }
 </style>
 </head>
 <body>
-<!-- build: advisory-page -->
-
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/">ILIR LARO</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a>
-      <a href="/ideas/">Ideas</a>
-      <a href="/advisory/" aria-current="page">Advisory</a>
+      <a href="/ideas/" aria-current="page">Ideas</a>
+      <a href="/advisory/">Advisory</a>
       <a href="/about/">About</a>
     </nav>
   </div>
 </header>
-
-
 <main>
-  <section class="advisory-hero shell">
-    <div class="advisory-hero-grid">
-      <p class="eyebrow">Advisory</p>
-      <h1>Practical advice for crypto, Web3 and fintech teams navigating growth and complexity.</h1>
-      <p class="lead">I work with founders and leadership teams on go-to-market strategy, growth marketing and international expansion. The starting point is the business you actually have today: its product, market, regulatory environment, team and resources.</p>
+  <section class="idea-article-hero shell">
+    <div class="article-topline">
+      <a class="article-back" href="/ideas/">← All ideas</a>
+      <div class="article-meta"><span>Product</span><span>5 min read</span></div>
     </div>
+    <h1>What product teams can learn from prediction markets</h1>
+    <p class="deck">Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.</p>
   </section>
 
-  <section class="advisory-context shell">
-    <div class="label">Where I can help</div>
-    <div>
-      <p>I have spent much of my career inside businesses operating in fast-moving parts of crypto and financial technology, where growth is rarely shaped by marketing alone. Regulation can change which products can be promoted, international expansion can require different operating models, and an organisational structure that works at one stage can become a constraint at another. I have also seen the other side: businesses with significant scale, specialist teams and processes that would make little sense for an early-stage company to reproduce.</p>
+  <div class="article-layout shell">
+    <aside class="article-side">
+      <div class="label">Ilir Laro</div>
+      <p>Personal observations shaped by work across crypto, product, growth and financial technology.</p>
+    </aside>
+    <article class="idea-copy">
+      
+<h2>A product built around uncertainty</h2>
+<p>Prediction markets are interesting because they make something most products hide unusually visible: uncertainty. A market begins with a question whose answer is not yet known, participants express a view through action rather than a survey, and the product continuously turns those actions into a changing signal. You can disagree with how accurately any individual market reflects reality and still find the product design instructive.</p>
 
-      <p>That is the perspective I bring to advisory work. I am not interested in importing a large-company playbook into a startup simply because I have seen it work somewhere else. A useful strategy has to fit the company's stage, resources, capabilities and risk environment, while still giving the team a clear route from where it is today to where it wants to go.</p>
-    </div>
-  </section>
+<p>What interests me is not only the financial mechanism. Prediction markets force product teams to be precise about the outcome, the rules, the time horizon and the action available to the customer. They also create immediate feedback. A participant can see whether the rest of the market agrees with them, watch that view change as new information arrives and decide whether to act again. Most products have a much weaker relationship between customer belief and observable feedback.</p>
 
-  <section class="service-section shell">
-    <div class="service-head">
-      <div class="label">Three areas</div>
-      <h2>Problems I can work through with your team.</h2>
-    </div>
+<h2>Clarity becomes part of the product</h2>
+<p>A prediction market cannot function properly if the underlying question is vague. The outcome needs to be understandable enough that participants know what they are expressing a view on and resolvable enough that the market can eventually determine what happened. That constraint creates a useful lesson for other product teams: ambiguity that feels acceptable internally can become expensive once it reaches a customer.</p>
 
-    <div class="service-grid">
-      <article class="service-card">
-        <span class="num">01</span>
-        <h3>Go-to-market strategy</h3>
-        <p>For products that are technically complex, entering a crowded category or struggling to translate what has been built into a clear customer proposition.</p>
-        <ul>
-          <li>Customer segmentation and target audiences</li>
-          <li>Positioning, messaging and value proposition</li>
-          <li>Launch strategy and sequencing</li>
-          <li>Channel planning and customer journeys</li>
-          <li>Competitive and market context</li>
-        </ul>
-      </article>
+<p>Teams often describe products using the language of the organisation rather than the language of the decision the customer is trying to make. Features, technical capabilities and roadmap terminology can become the centre of the proposition. Prediction markets work in the opposite direction. The customer starts with the question and the product exists around that question. For many products, particularly complex financial ones, beginning with the customer's decision rather than the underlying machinery would improve both positioning and design.</p>
 
-      <article class="service-card">
-        <span class="num">02</span>
-        <h3>Growth marketing</h3>
-        <p>For teams that need to understand where customer growth is breaking down and build a more deliberate system across the full lifecycle.</p>
-        <ul>
-          <li>Acquisition and activation strategy</li>
-          <li>Lifecycle and CRM</li>
-          <li>Retention and reactivation</li>
-          <li>Monetisation and customer value</li>
-          <li>Experimentation and channel prioritisation</li>
-        </ul>
-      </article>
+<div class="idea-callout"><p>Good products reduce the distance between what the customer believes, what they can do and what they learn afterwards.</p></div>
 
-      <article class="service-card">
-        <span class="num">03</span>
-        <h3>International expansion</h3>
-        <p>For crypto, Web3 and fintech businesses entering new markets where growth, regulation, localisation and operating readiness need to be considered together.</p>
-        <ul>
-          <li>Market-entry and GTM readiness</li>
-          <li>Regulatory implications for growth and marketing</li>
-          <li>Localisation and customer differences</li>
-          <li>Operating models and cross-functional ownership</li>
-          <li>Organisation design and competitor context</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+<h2>Action produces better information than stated intent</h2>
+<p>Another useful characteristic is that prediction markets ask people to commit something to their view. That does not make the resulting signal perfect, but it creates a different kind of information from asking what somebody says they might do. Product teams regularly encounter this gap. Customers can tell you they value a feature, say they would pay for something or express enthusiasm during research, then behave very differently once the product is available.</p>
 
-  <section class="principles shell">
-    <div class="label">How I work</div>
-    <div>
-      <h2>Advice should reduce complexity, not add another layer of it.</h2>
-      <p>A strategy is only useful if the team can execute it. That means understanding the constraints before recommending the solution: available headcount, budget, product maturity, regulatory exposure, internal capabilities and the amount of organisational change the business can realistically absorb.</p>
+<p>This does not mean research is unhelpful. It means behavioural evidence should eventually sit beside stated preference. The closer a product team can get to observing a real decision under realistic conditions, the more useful the feedback becomes. That might mean testing willingness to pay, measuring whether somebody completes a meaningful workflow, looking at repeat behaviour or running a lightweight experiment before committing to a large build.</p>
 
-      <p>I also tend to look across functions rather than treating Growth, Product, Operations and regulatory teams as separate systems. In crypto and fintech, the best commercial answer can easily fail if the customer journey, operating model or compliance environment cannot support it, so the work needs to connect those pieces without turning a smaller company into a miniature version of a global enterprise.</p>
+<h2>Feedback loops need to be visible</h2>
+<p>Prediction markets also show the value of a tight feedback loop. New information enters, prices move, participants reassess and the market changes again. The product itself makes that loop visible. Many digital products are less explicit. A user takes an action, but the benefit may be delayed, unclear or difficult to attribute, which weakens the reason to return.</p>
 
-      <div class="fit-grid" aria-label="Advisory principles">
-        <div class="fit-item"><b>Fit the stage</b><span>Use the level of process, team structure and investment the business actually needs now.</span></div>
-        <div class="fit-item"><b>Work across the system</b><span>Consider Product, Growth, Operations and regulatory constraints together where the problem requires it.</span></div>
-        <div class="fit-item"><b>Leave something usable</b><span>Turn the discussion into decisions, priorities and a framework the team can continue using after the engagement.</span></div>
-      </div>
-    </div>
-  </section>
+<p>For product and growth teams, that raises a practical question: after the customer takes the action you want, what do they immediately understand that they did not understand before? A trading product may show a position and its performance. A fitness product can show progress. A learning product can make improvement visible. A financial app can show what changed in the customer's position or behaviour. The mechanism will differ, but products become easier to repeat when the customer can see the consequence of the previous action.</p>
 
-  <section class="advisory-why shell">
-    <div class="label">Why advisory</div>
-    <div>
-      <p>Crypto has developed quickly, and a lot of the industry's lessons have been learned the expensive way. I have spent years watching companies navigate growth, regulation, market expansion and the operational complexity that comes with scale. If some of that experience can help another team avoid a mistake, make a better decision or build something more sustainably, I think that is useful for the wider industry as well.</p>
+<h2>Participation is part of the value</h2>
+<p>Prediction markets are also social without needing to look like social networks. The customer is not interacting only with software; they are interacting with an aggregate view created by other participants. That can make the product more interesting because every new participant can contribute information, liquidity or disagreement that changes the experience for everyone else.</p>
 
-      <p>I keep the work selective because I want to be useful rather than simply available. The best fit is usually a founder or leadership team with a real problem to work through, enough context to make decisions and a willingness to look at the commercial, customer and operational sides of the problem together.</p>
-    </div>
-  </section>
+<p>Not every product should manufacture a network effect, but teams can still ask whether customer participation creates value beyond the individual transaction. Reviews, benchmarks, rankings, community knowledge, shared liquidity and collaborative datasets are different versions of the same idea. When participation improves the product for the next user, distribution and product quality can begin reinforcing each other.</p>
 
-  <section class="contact-panel shell">
-    <div>
-      <h2>Tell me what you’re working on.</h2>
-      <p>If you are building in crypto, Web3 or fintech and one of these problems sounds familiar, send me a short note with the product, stage and problem you are trying to solve.</p>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:ilir9641@googlemail.com">Email →</a>
-      <a href="https://www.linkedin.com/in/ilirlaro/" target="_blank" rel="noopener">LinkedIn →</a>
-    </div>
+<h2>The lesson is not to copy the market</h2>
+<p>I would not take these observations and conclude that every product needs probabilities, trading mechanics or a public crowd signal. The interesting part is the discipline underneath the format. Prediction markets make the customer question explicit, require action rather than passive interest, produce continuous feedback and create an environment where other participants affect the value of the experience.</p>
+
+<p>Those principles are useful well beyond prediction products. If a team can make the customer's decision clearer, test behaviour rather than relying only on intention, shorten the distance between action and feedback, and find places where participation genuinely improves the product, it can often create a stronger reason to return. Prediction markets simply make those mechanics easier to see.</p>
+
+    </article>
+  </div>
+
+  <section class="article-next shell">
+    <div class="small">Next idea</div>
+    <a href="/ideas/building-my-own-corner-of-the-internet/">
+      <h2>Building my own corner of the internet</h2>
+      <span>Read →</span>
+    </a>
   </section>
 </main>
-
 <footer class="shell">
   <div class="footer-grid">
     <span>© 2026 Ilir Laro</span>
