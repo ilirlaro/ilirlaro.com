@@ -243,7 +243,11 @@ a.brand:focus-visible {
   line-height: 1;
   white-space: nowrap;
 }
-.brand-binance .brand-name,
+.brand-binance .brand-name {
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: .01em;
+}
 .brand-litecoin .brand-name {
   font-size: 12px;
   letter-spacing: .02em;
@@ -256,23 +260,25 @@ a.brand:focus-visible {
   display: block;
 }
 .brand-crypto {
-  min-width: 164px;
-}
-.brand-crypto .brand-name {
-  font-size: 19px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  text-transform: lowercase;
-  font-family: Arial, Helvetica, sans-serif;
-  transform: scaleX(1.06);
-  transform-origin: left center;
+  min-width: 170px;
+  gap: 9px;
 }
 .crypto-official-logo {
-  width: 31px;
-  height: 31px;
-  flex: 0 0 31px;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
   display: block;
   object-fit: contain;
+}
+.crypto-wordmark-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  text-transform: lowercase;
+  color: var(--ink);
+  white-space: nowrap;
 }
 .brand-litecoin .brand-icon {
   border-radius: 50%;
@@ -616,7 +622,7 @@ a.press-logo:focus-visible {
       <div class="company-logos" aria-label="Companies">
         <a class="brand brand-crypto" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
           <img class="crypto-official-logo" src="/crypto-com-icon.png" alt="" aria-hidden="true" draggable="false">
-          <span class="brand-name">crypto.com</span>
+          <span class="crypto-wordmark-text">crypto.com</span>
         </a>
         <a class="brand brand-binance" href="/experience/#binance" aria-label="Read more about my experience at Binance">
           <img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/binance.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
