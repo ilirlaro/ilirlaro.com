@@ -1,0 +1,856 @@
+---
+permalink: /work/crypto-com-product-marketing-gtm/
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Building a Scalable Product Marketing &amp; GTM Operating Model at Crypto.com | Ilir Laro</title>
+<meta name="description" content="A case study on building a scalable Product Marketing and GTM operating model connecting Product, Growth, customer strategy and launch execution at Crypto.com.">
+<link rel="canonical" href="https://ilirlaro.com/work/crypto-com-product-marketing-gtm/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
+<style>
+:root{
+  --bg:#f5f3ee;
+  --ink:#11110f;
+  --muted:#6f6b63;
+  --line:#d9d5cc;
+  --panel:#e8e5da;
+  --panel-mid:#d8d4c9;
+  --dark:#1a1b18;
+  --white:#f8f7f3;
+  --shell:1248px;
+  --article:790px;
+  --side:32px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.62}
+button{font:inherit}
+.shell{width:min(calc(100% - (var(--side)*2)),var(--shell));margin-inline:auto}
+.site-header{padding-top:38px}
+.header-inner{
+  min-height:58px;display:flex;align-items:flex-start;justify-content:space-between;
+  border-bottom:1px solid var(--line)
+}
+.wordmark{font-size:14px;font-weight:800;letter-spacing:-.015em}
+.primary-nav{display:flex;gap:42px;font-size:14px;font-weight:500}
+.primary-nav a[aria-current="page"]{font-weight:700}
+.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:650}
+.eyebrow{
+  margin:0 0 18px;font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase
+}
+.page-hero{padding:96px 0 76px}
+.page-hero h1{
+  margin:0;max-width:980px;font-size:clamp(58px,7.1vw,102px);line-height:.95;
+  letter-spacing:-.065em;font-weight:500
+}
+.page-hero .lead{
+  margin:34px 0 0;max-width:770px;color:var(--muted);font-size:21px;line-height:1.52;letter-spacing:-.018em
+}
+.page-hero .sublead{margin:24px 0 0;max-width:720px;font-size:14px;line-height:1.65}
+.section{
+  border-top:1px solid var(--line);padding:34px 0 84px
+}
+.section-head{
+  display:grid;grid-template-columns:190px 1fr;gap:36px;margin-bottom:42px
+}
+.section-number,.section-kicker{font-size:11px;font-weight:750;letter-spacing:.11em;text-transform:uppercase}
+.section-head h2{
+  margin:0;font-size:clamp(32px,4vw,54px);line-height:1.02;letter-spacing:-.045em;font-weight:500
+}
+.section-head p{
+  grid-column:2;margin:12px 0 0;max-width:700px;color:var(--muted);font-size:17px;line-height:1.6
+}
+.project-feature{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);
+  min-height:520px;background:var(--dark);color:var(--white)
+}
+.project-copy{padding:54px}
+.project-no{font-size:12px;font-weight:700;letter-spacing:.08em}
+.project-company{margin-top:84px;font-size:12px;font-weight:700;letter-spacing:.08em}
+.project-feature h3{
+  margin:18px 0 0;max-width:720px;font-size:clamp(36px,4.3vw,64px);line-height:1.02;letter-spacing:-.05em;font-weight:500
+}
+.project-copy p{max-width:690px;color:#c9c7c0;font-size:16px;line-height:1.65}
+.project-tags{margin-top:32px!important;font-size:12px!important;color:#aaa79f!important}
+.project-link{
+  margin-top:40px;display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:650
+}
+.project-visual{
+  position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(145deg,#d9d5ca,#bcb8af);color:var(--ink);overflow:hidden
+}
+.project-visual::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,transparent 49.5%,rgba(17,17,15,.08) 50%,transparent 50.5%),
+    linear-gradient(transparent 49.5%,rgba(17,17,15,.08) 50%,transparent 50.5%);
+  background-size:54px 54px
+}
+.visual-label{position:relative;padding:38px;font-size:11px;font-weight:750;letter-spacing:.11em;text-transform:uppercase}
+.visual-mark{
+  position:relative;margin:auto;padding:0 38px;text-align:center;font-size:clamp(34px,4.3vw,60px);
+  letter-spacing:-.05em;font-weight:650
+}
+.visual-mark span{display:block;margin-top:12px;font-size:13px;letter-spacing:.02em;font-weight:500;color:#5f5b54}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.project-card{background:var(--panel);padding:42px;min-height:330px}
+.project-card:nth-child(2){background:var(--panel-mid)}
+.project-card .company{font-size:11px;font-weight:750;letter-spacing:.1em}
+.project-card h3{margin:88px 0 14px;font-size:30px;line-height:1.08;letter-spacing:-.035em;font-weight:550}
+.project-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.coming{display:inline-block;margin-top:26px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.experience-list{border-top:1px solid var(--line)}
+.experience-row{
+  display:grid;grid-template-columns:1.2fr 1fr 130px;gap:28px;padding:25px 0;border-bottom:1px solid var(--line);align-items:start
+}
+.exp-company{font-size:20px;font-weight:620;letter-spacing:-.02em}
+.exp-role{font-size:14px;color:var(--muted)}
+.exp-years{text-align:right;font-size:13px}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.expertise-item{background:var(--bg);padding:28px 24px;min-height:110px;font-size:15px;font-weight:620}
+.cta-band{
+  margin-top:14px;background:var(--dark);color:var(--white);padding:62px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:40px
+}
+.cta-band h2{margin:0;font-size:clamp(38px,5vw,70px);font-weight:500;letter-spacing:-.055em}
+.cta-band a{font-size:14px;font-weight:650;white-space:nowrap}
+footer{padding:62px 0 42px}
+.footer-grid{border-top:1px solid var(--line);padding-top:28px;display:flex;justify-content:space-between;gap:40px;font-size:12px;color:var(--muted)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+
+/* case study */
+.case-hero{padding:84px 0 58px}
+.back-link{display:inline-block;margin-bottom:68px;font-size:13px;font-weight:650}
+.case-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.case-meta span{
+  border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase
+}
+.case-hero h1{
+  margin:0;max-width:1100px;font-size:clamp(50px,6.6vw,94px);line-height:.96;letter-spacing:-.062em;font-weight:500
+}
+.case-deck{margin:34px 0 0;max-width:830px;font-size:21px;line-height:1.52;color:var(--muted);letter-spacing:-.015em}
+.metrics{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr)
+}
+.metric{padding:30px 28px;border-right:1px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric strong{display:block;font-size:38px;line-height:1;letter-spacing:-.05em;font-weight:550}
+.metric span{display:block;margin-top:10px;color:var(--muted);font-size:12px;line-height:1.45}
+.article-wrap{display:grid;grid-template-columns:230px minmax(0,var(--article));gap:70px;padding:78px 0}
+.article-aside{position:sticky;top:32px;align-self:start}
+.article-aside .label{font-size:10px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.article-aside nav{margin-top:18px;display:grid;gap:10px}
+.article-aside nav a{font-size:12px;color:var(--muted);line-height:1.35}
+.article{max-width:var(--article)}
+.article h2{
+  margin:72px 0 20px;font-size:35px;line-height:1.08;letter-spacing:-.04em;font-weight:550
+}
+.article h2:first-child{margin-top:0}
+.article p{margin:0 0 21px;font-size:17px;line-height:1.75;color:#2a2926}
+.article ul{margin:2px 0 26px;padding-left:20px}
+.article li{margin:8px 0;font-size:16px;line-height:1.65;color:#2a2926}
+.article sup a{font-size:10px;font-weight:700}
+.routing{
+  margin:38px 0 48px;border:1px solid var(--line);padding:24px;background:#eeeae2
+}
+.routing-title{margin:0 0 19px;font-size:10px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.routing-flow{display:grid;grid-template-columns:1fr 34px 1.15fr 34px 1fr 34px 1fr;align-items:stretch}
+.route-box{background:var(--bg);border:1px solid #cbc7be;padding:18px;min-height:112px}
+.route-box b{display:block;font-size:13px;margin-bottom:9px}
+.route-box span{font-size:11px;line-height:1.5;color:var(--muted)}
+.route-arrow{display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--muted)}
+.archive-slot{
+  margin:42px 0 52px;border:1px solid var(--line);background:#d7d3ca;min-height:390px;
+  display:grid;place-items:center;padding:36px;text-align:center
+}
+.archive-slot strong{display:block;font-size:24px;letter-spacing:-.03em}
+.archive-slot span{display:block;margin-top:10px;max-width:510px;color:#66625b;font-size:13px;line-height:1.55}
+.archive-slot a{display:inline-block;margin-top:19px;text-decoration:underline;text-underline-offset:3px;font-size:12px}
+.callout{
+  margin:40px 0;padding:28px 30px;border-left:3px solid var(--ink);background:#ebe7df
+}
+.callout p{margin:0;font-size:18px;line-height:1.6;color:var(--ink)}
+.sources{margin-top:74px;padding-top:28px;border-top:1px solid var(--line)}
+.sources h2{margin:0 0 18px;font-size:14px;letter-spacing:-.01em}
+.sources ol{padding-left:18px;margin:0}
+.sources li{font-size:12px;line-height:1.55;color:var(--muted);margin:9px 0}
+.sources a{text-decoration:underline;text-underline-offset:2px}
+.next-project{
+  border-top:1px solid var(--line);padding:58px 0 82px;display:flex;justify-content:space-between;gap:40px;align-items:flex-end
+}
+.next-project .small{font-size:10px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+.next-project h2{margin:10px 0 0;font-size:44px;line-height:1.02;letter-spacing:-.045em;font-weight:500}
+.next-project span{font-size:13px;color:var(--muted)}
+
+@media(max-width:900px){
+  :root{--side:22px}
+  .page-hero{padding-top:70px}
+  .project-feature{grid-template-columns:1fr}
+  .project-visual{min-height:320px}
+  .project-grid{grid-template-columns:1fr}
+  .section-head{grid-template-columns:1fr;gap:15px}
+  .section-head p{grid-column:1}
+  .experience-row{grid-template-columns:1fr 1fr}
+  .exp-years{grid-column:2;text-align:left}
+  .expertise-grid{grid-template-columns:1fr 1fr}
+  .article-wrap{grid-template-columns:1fr;gap:30px}
+  .article-aside{position:static;border-bottom:1px solid var(--line);padding-bottom:24px}
+  .article-aside nav{grid-template-columns:1fr 1fr}
+  .metrics{grid-template-columns:1fr 1fr}
+  .metric:nth-child(2){border-right:0}
+  .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .routing-flow{grid-template-columns:1fr}
+  .route-arrow{min-height:30px;transform:rotate(90deg)}
+}
+@media(max-width:640px){
+  :root{--side:18px}
+  .site-header{padding-top:24px}
+  .header-inner{align-items:flex-start}
+  .primary-nav{
+    position:absolute;right:18px;top:62px;background:var(--bg);border:1px solid var(--line);
+    padding:18px;display:none;flex-direction:column;gap:15px;z-index:30;min-width:150px
+  }
+  .primary-nav.open{display:flex}
+  .menu-toggle{display:block}
+  .page-hero{padding:56px 0 58px}
+  .page-hero h1{font-size:54px}
+  .page-hero .lead,.case-deck{font-size:18px}
+  .project-copy{padding:30px}
+  .project-company{margin-top:60px}
+  .section{padding-bottom:62px}
+  .project-card{padding:30px;min-height:280px}
+  .project-card h3{margin-top:62px}
+  .experience-row{grid-template-columns:1fr}
+  .exp-years{grid-column:1}
+  .expertise-grid{grid-template-columns:1fr}
+  .cta-band{padding:36px 28px;display:block}
+  .cta-band a{display:inline-block;margin-top:30px}
+  .footer-grid{display:block}
+  .footer-links{margin-top:20px}
+  .case-hero{padding-top:48px}
+  .back-link{margin-bottom:46px}
+  .case-hero h1{font-size:49px}
+  .metrics{grid-template-columns:1fr}
+  .metric,.metric:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}
+  .metric:last-child{border-bottom:0}
+  .article-wrap{padding-top:50px}
+  .article-aside nav{grid-template-columns:1fr}
+  .article h2{font-size:30px;margin-top:58px}
+  .article p{font-size:16px}
+  .archive-slot{min-height:300px}
+  .next-project{display:block}
+  .next-project span{display:block;margin-top:24px}
+}
+
+.launch-shot{
+  position:relative;
+  margin:42px 0 52px;
+  min-height:420px;
+  overflow:hidden;
+  background:#111;
+  border:1px solid var(--line);
+}
+.launch-shot img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.launch-shot::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:52%;
+  background:linear-gradient(to bottom,rgba(12,12,11,0),rgba(12,12,11,.88));
+  pointer-events:none;
+}
+.launch-overlay{
+  position:absolute;
+  z-index:2;
+  left:28px;
+  right:28px;
+  bottom:24px;
+  max-width:650px;
+  color:#fff;
+}
+.launch-overlay .launch-kicker{
+  display:block;
+  margin-bottom:7px;
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.72);
+}
+.launch-overlay strong{
+  display:block;
+  font-size:27px;
+  line-height:1.05;
+  letter-spacing:-.035em;
+  font-weight:600;
+}
+.launch-overlay p{
+  margin:10px 0 0;
+  max-width:610px;
+  font-size:13px;
+  line-height:1.55;
+  color:rgba(255,255,255,.83);
+}
+.launch-overlay a{
+  display:inline-block;
+  margin-top:12px;
+  font-size:12px;
+  font-weight:650;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+@media(max-width:640px){
+  .launch-shot{min-height:0}
+  .launch-shot::after{height:68%}
+  .launch-overlay{left:18px;right:18px;bottom:16px}
+  .launch-overlay strong{font-size:22px}
+  .launch-overlay p{font-size:12px;line-height:1.45}
+}
+
+
+
+/* Crypto.com case-study visuals */
+.intake-visual{
+  margin:38px 0 48px;
+  border:1px solid var(--line);
+  background:#ece8df;
+  padding:24px;
+}
+.intake-title,
+.visual-kicker{
+  margin:0 0 18px;
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.intake-grid{
+  display:grid;
+  grid-template-columns:1fr 44px 1fr;
+  gap:0;
+  align-items:stretch;
+}
+.intake-card{
+  background:var(--bg);
+  border:1px solid #cbc7be;
+  padding:22px;
+  min-height:220px;
+}
+.intake-card h3{
+  margin:0 0 16px;
+  font-size:18px;
+  font-weight:600;
+  letter-spacing:-.025em;
+}
+.intake-card ul{
+  margin:0;
+  padding-left:18px;
+}
+.intake-card li{
+  margin:6px 0;
+  font-size:13px;
+  line-height:1.5;
+  color:var(--muted);
+}
+.intake-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  color:var(--muted);
+}
+
+.tier-visual{
+  margin:38px 0 48px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.tier-card{
+  min-height:245px;
+  background:var(--bg);
+  padding:26px 24px;
+}
+.tier-card:nth-child(1){background:#1a1b18;color:#f8f7f3}
+.tier-card:nth-child(2){background:#d9d5cc}
+.tier-card:nth-child(3){background:#ebe8e0}
+.tier-num{
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.tier-card strong{
+  display:block;
+  margin-top:48px;
+  font-size:27px;
+  line-height:1.05;
+  letter-spacing:-.04em;
+  font-weight:550;
+}
+.tier-card p{
+  margin:14px 0 0!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  color:inherit!important;
+  opacity:.76;
+}
+
+.gtm-visual{
+  margin:40px 0 50px;
+  border:1px solid var(--line);
+  background:#eeeae2;
+  padding:24px;
+}
+.gtm-flow{
+  display:grid;
+  grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr 28px 1fr;
+  align-items:stretch;
+}
+.gtm-step{
+  background:var(--bg);
+  border:1px solid #cbc7be;
+  padding:17px 14px;
+  min-height:132px;
+}
+.gtm-step b{
+  display:block;
+  margin-bottom:9px;
+  font-size:12px;
+  line-height:1.25;
+}
+.gtm-step span{
+  display:block;
+  font-size:10px;
+  line-height:1.48;
+  color:var(--muted);
+}
+.gtm-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+}
+
+.channel-shift{
+  margin:38px 0 48px;
+  display:grid;
+  grid-template-columns:1fr 70px 1fr;
+  align-items:center;
+}
+.channel-box{
+  border:1px solid var(--line);
+  padding:25px;
+  background:var(--bg);
+}
+.channel-box.after{
+  background:var(--dark);
+  color:var(--white);
+}
+.channel-box .big{
+  display:block;
+  font-size:52px;
+  line-height:1;
+  letter-spacing:-.055em;
+  font-weight:550;
+}
+.channel-box .desc{
+  display:block;
+  margin-top:11px;
+  font-size:12px;
+  line-height:1.45;
+  color:var(--muted);
+}
+.channel-box.after .desc{color:#aaa79f}
+.channel-arrow{
+  text-align:center;
+  font-size:22px;
+  color:var(--muted);
+}
+
+.product-examples{
+  margin:38px 0 48px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.product-panel{
+  min-height:360px;
+  position:relative;
+  overflow:hidden;
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.product-panel.exchange{
+  color:#f7f5ef;
+  background:
+    radial-gradient(circle at 78% 24%,rgba(255,255,255,.14),transparent 26%),
+    linear-gradient(145deg,#171816,#353733);
+}
+.product-panel.app{
+  color:#171816;
+  background:
+    radial-gradient(circle at 70% 23%,rgba(255,255,255,.75),transparent 25%),
+    linear-gradient(145deg,#d8d4c9,#a8aaa3);
+}
+.product-panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,transparent 49.6%,rgba(127,127,127,.15) 50%,transparent 50.4%),
+    linear-gradient(transparent 49.6%,rgba(127,127,127,.15) 50%,transparent 50.4%);
+  background-size:46px 46px;
+  pointer-events:none;
+}
+.product-top,
+.product-bottom{position:relative;z-index:1}
+.product-label{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.product-panel h3{
+  margin:0;
+  max-width:290px;
+  font-size:35px;
+  line-height:1.02;
+  letter-spacing:-.045em;
+  font-weight:550;
+}
+.product-panel p{
+  margin:13px 0 0!important;
+  max-width:310px;
+  font-size:12px!important;
+  line-height:1.55!important;
+  color:inherit!important;
+  opacity:.72;
+}
+.product-panel a{
+  display:inline-block;
+  margin-top:16px;
+  font-size:11px;
+  font-weight:650;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+@media(max-width:900px){
+  .tier-visual{grid-template-columns:1fr}
+  .gtm-flow{grid-template-columns:1fr}
+  .gtm-arrow{min-height:28px;transform:rotate(90deg)}
+  .product-examples{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .intake-grid{grid-template-columns:1fr}
+  .intake-arrow{min-height:34px;transform:rotate(90deg)}
+  .channel-shift{grid-template-columns:1fr}
+  .channel-arrow{padding:14px 0;transform:rotate(90deg)}
+  .product-panel{min-height:310px}
+}
+</style>
+</head>
+<body>
+<!-- build: crypto-com-product-marketing-gtm-case-study -->
+<header class="site-header">
+  <div class="header-inner shell">
+    <a class="wordmark" href="/">ILIR LARO</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="/work/" aria-current="page">Work</a>
+      <a href="/#ideas">Ideas</a>
+      <a href="/#advisory">Advisory</a>
+      <a href="/#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero shell">
+    <a class="back-link" href="/work/">← Back to Work</a>
+    <div class="case-meta">
+      <span>Crypto.com</span><span>Product Marketing</span><span>GTM</span><span>Growth</span>
+    </div>
+    <h1>Building a scalable product marketing and GTM operating model</h1>
+    <p class="case-deck">How I helped build a more structured Product Marketing function connecting Product, Growth and go-to-market execution across an expanding portfolio of financial products.</p>
+  </section>
+
+  <section class="metrics shell" aria-label="Project metrics">
+    <div class="metric"><strong>4</strong><span>Product Marketing Managers operating through the framework</span></div>
+    <div class="metric"><strong>20–30</strong><span>Typical product and GTM requests per month, with peaks around 60</span></div>
+    <div class="metric"><strong>11–12</strong><span>Major Tier 1 initiatives across a typical annual cycle</span></div>
+    <div class="metric"><strong>2–3 → 6–7</strong><span>Typical channel breadth for major launches</span></div>
+  </section>
+
+  <div class="article-wrap shell">
+    <aside class="article-aside">
+      <div class="label">In this case study</div>
+      <nav>
+        <a href="#context">Business context</a>
+        <a href="#upstream">Earlier PMM involvement</a>
+        <a href="#intake">Product intake</a>
+        <a href="#tiers">GTM tiering</a>
+        <a href="#launch">Launch workflow</a>
+        <a href="#growth">Product + Growth</a>
+        <a href="#proactive">Proactive PMM</a>
+        <a href="#standardise">Team operating model</a>
+        <a href="#portfolio">Product portfolio</a>
+        <a href="#impact">What changed</a>
+      </nav>
+    </aside>
+
+    <article class="article">
+      <h2 id="context">A broader product portfolio needed a broader GTM model</h2>
+      <p>When I joined Crypto.com, the organisation was evolving in two areas at the same time. The product portfolio was becoming broader, with the business expanding beyond its core crypto proposition into advanced trading, prediction markets, onchain products and new forms of exposure to traditional financial markets. Marketing was also changing. Crypto.com had historically invested heavily in building a global brand, while the organisation was now developing a more specialised Growth capability spanning acquisition, lifecycle, campaigns, affiliates, organic growth and monetisation.</p>
+
+      <p>Product Marketing sat directly between those two changes. At the time, PMM involvement was weighted heavily towards the final stages of a product launch. A Product Manager would bring forward a feature or product and Product Marketing would help translate it into launch communications across channels such as web, blog, social and CRM. That approach could support individual releases, but it became increasingly limiting as the volume, complexity and strategic importance of launches increased. More complex products required earlier customer thinking, clearer prioritisation and a more coordinated way of using the specialist Growth capabilities being built across the organisation.</p>
+
+      <p>I joined as the first hire into a newly rebuilt Product Marketing team, which subsequently grew to four PMMs. A significant part of my role became designing how that function should operate: how requests entered Product Marketing, when PMMs became involved with Product, how initiatives were prioritised, how GTM strategies were built and how Product Marketing could coordinate the different teams required to take a product into market.</p>
+
+      <h2 id="upstream">Moving Product Marketing earlier into the product lifecycle</h2>
+      <p>The first change was moving Product Marketing further upstream. Rather than beginning with the question of which launch assets were required, we wanted to understand the customer and proposition while there was still time to influence the product and the eventual GTM strategy. For larger initiatives, this meant working through the customer problem, target audience, use case, proposition and adoption barriers before deciding which channels or communications were needed.</p>
+
+      <p>Depending on the initiative, PMM involvement could include:</p>
+      <ul>
+        <li>customer and market research, including focus groups and qualitative feedback</li>
+        <li>audience segmentation and proposition development</li>
+        <li>positioning and messaging</li>
+        <li>launch objectives, sequencing and channel strategy</li>
+        <li>regulatory and communications planning</li>
+        <li>launch readiness, measurement and optimisation</li>
+      </ul>
+
+      <p>This changed the relationship with Product. PMMs became involved earlier in the development lifecycle, reviewing product concepts and customer journeys and helping Product teams think through who the proposition was for, why somebody would use it and how it should ultimately be positioned. Over time, we also worked more closely with Product leadership to look across the broader roadmap and agree where deeper GTM investment should be concentrated.</p>
+
+      <h2 id="intake">Redesigning how work entered Product Marketing</h2>
+      <p>Crypto.com already used Jira as part of its product-development workflow. Jira is a work-management system used widely by Product and Engineering teams to submit requests, assign ownership and track work across functions. There was no need to replace that infrastructure. The opportunity was to redesign the information being captured and the workflow that followed once a Product Manager submitted a request.</p>
+
+      <p>Historically, a request could be heavily focused on outputs such as a blog, CRM communication, website copy or social support. The revised intake tried to understand the product before deciding what the marketing response should be. Depending on the initiative, Product teams could provide:</p>
+      <ul>
+        <li>the product or feature being launched and the customer problem it addressed</li>
+        <li>the business objective and intended customer segments or markets</li>
+        <li>relevant Product Requirements Documents</li>
+        <li>Figma links showing the proposed product experience and customer journey</li>
+        <li>expected launch timing, dependencies and known constraints</li>
+      </ul>
+
+      <div class="intake-visual" aria-label="Product Marketing intake model">
+        <p class="intake-title">How the intake changed</p>
+        <div class="intake-grid">
+          <div class="intake-card">
+            <h3>Product submission</h3>
+            <ul>
+              <li>What is being launched?</li>
+              <li>Who is the customer?</li>
+              <li>What problem does it solve?</li>
+              <li>PRD + Figma journey</li>
+              <li>Timing + dependencies</li>
+            </ul>
+          </div>
+          <div class="intake-arrow">→</div>
+          <div class="intake-card">
+            <h3>PMM strategic layer</h3>
+            <ul>
+              <li>GTM tier</li>
+              <li>Segmentation</li>
+              <li>Proposition + positioning</li>
+              <li>Messaging</li>
+              <li>Growth workstreams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p>Figma was particularly useful because it gave PMMs visibility into the actual experience a customer would encounter rather than relying entirely on written requirements. Once the request entered Product Marketing, the assigned PMM could work with Product to complete the strategic layer around it. The intake therefore became less about requesting a set of marketing deliverables and more about establishing what was being launched, who it was for and what customer behaviour the organisation wanted to create.</p>
+
+      <h2 id="tiers">Creating a tiered GTM model</h2>
+      <p>With approximately 20 to 30 requests entering the team in a normal month, and busier periods reaching around 60, we needed a clearer way to distinguish a strategic launch from a smaller feature or tactical requirement. I introduced a three-tier framework that connected the scale of an initiative to the level of Product Marketing and Growth support it received.</p>
+
+      <ul>
+        <li><strong>Tier 1:</strong> Major strategic launches receiving the deepest PMM involvement and potentially activating the full Growth organisation across acquisition, retention and monetisation. Paid acquisition investment could form part of the launch plan. Around 11 to 12 initiatives across a typical annual cycle reached this level.</li>
+        <li><strong>Tier 2:</strong> Meaningful product features, campaigns or proactive growth initiatives requiring a structured GTM approach and a selected mix of relevant channels.</li>
+        <li><strong>Tier 3:</strong> Tactical or business-as-usual requests that could normally be supported through one or two channels without a full GTM programme.</li>
+      </ul>
+
+      <div class="tier-visual" aria-label="Three-tier go-to-market framework">
+        <div class="tier-card">
+          <span class="tier-num">Tier 1</span>
+          <strong>Strategic launch</strong>
+          <p>Deep PMM ownership · Broad Growth activation · Acquisition + retention + monetisation</p>
+        </div>
+        <div class="tier-card">
+          <span class="tier-num">Tier 2</span>
+          <strong>Feature / campaign</strong>
+          <p>Structured GTM · Selected specialist channels · Targeted activation</p>
+        </div>
+        <div class="tier-card">
+          <span class="tier-num">Tier 3</span>
+          <strong>Tactical request</strong>
+          <p>Focused support · One or two channels · Faster execution</p>
+        </div>
+      </div>
+
+      <p>The tier did more than label a Jira request. It shaped the expected depth of research, the GTM documentation required, the level of stakeholder involvement and the amount of Growth capacity committed to the launch. It also improved planning with Product leadership because we could look across the roadmap, compare competing initiatives and agree where the organisation should concentrate its deepest GTM support.</p>
+
+      <h2 id="launch">How a major launch moved through the organisation</h2>
+      <p>Once a Tier 1 initiative had been prioritised, the PMM became the coordinating layer across several workstreams. The process began with Product: understanding the requirements, customer problem, commercial objective and proposed user experience. From there, the PMM could develop the segmentation, value proposition, positioning, messaging hierarchy, launch objectives, customer behaviours we wanted to influence, sequencing and channel strategy.</p>
+
+      <p>That GTM strategy created a common foundation for the wider organisation. Core communications and creative requirements could then be developed and reviewed with the relevant functions, including Copy, Creative, Legal and Compliance. Once the central proposition and communications framework were established, specialist Growth teams could translate the strategy into channel-specific activation.</p>
+
+      <div class="gtm-visual" aria-label="Major product launch operating model">
+        <p class="visual-kicker">Tier 1 launch flow</p>
+        <div class="gtm-flow">
+          <div class="gtm-step"><b>Product</b><span>Customer problem<br>Product journey<br>Business objective</span></div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-step"><b>Product Marketing</b><span>Research<br>Segmentation<br>Positioning + messaging</span></div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-step"><b>Launch development</b><span>Creative<br>Copy<br>Legal + Compliance</span></div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-step"><b>Growth activation</b><span>Acquisition<br>CRM<br>Campaigns + affiliates</span></div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-step"><b>Launch + optimise</b><span>Activation<br>Measurement<br>Iteration</span></div>
+        </div>
+      </div>
+
+      <p>This sequencing reduced the risk of different channels interpreting the same product independently. Product Marketing provided a common customer and product narrative, while specialist teams retained ownership of how that strategy should be executed within their respective channels.</p>
+
+      <h2 id="growth">Connecting Product with the Growth organisation</h2>
+      <p>Crypto.com had specialist Growth capabilities covering different stages of the customer lifecycle. Depending on the product and commercial objective, a major launch could bring together paid and user acquisition, lifecycle and CRM, campaigns, affiliates and referrals, SEO and organic acquisition, social and organic media, creative, and VIP or monetisation activity.</p>
+
+      <p>The PMM was not expected to execute every channel. The role was to coordinate the strategy and ensure each specialist team understood the customer, proposition and launch objective before designing its own activation. Lifecycle could identify which existing cohorts were most likely to adopt the product and build journeys around those behaviours; Acquisition could determine where external investment made sense; Campaigns could build an activation mechanic; and Affiliates could assess whether partners offered an efficient distribution route.</p>
+
+      <div class="channel-shift" aria-label="Increase in channel breadth for major launches">
+        <div class="channel-box">
+          <span class="big">2–3</span>
+          <span class="desc">Typical channels previously activated around a product launch</span>
+        </div>
+        <div class="channel-arrow">→</div>
+        <div class="channel-box after">
+          <span class="big">6–7</span>
+          <span class="desc">Relevant Growth and Marketing capabilities on a major Tier 1 launch</span>
+        </div>
+      </div>
+
+      <p>The objective was not to maximise the number of channels for its own sake. A product designed mainly for existing users might lean more heavily on lifecycle and in-product activation, while a new customer proposition could justify acquisition investment, affiliates or organic search. An advanced trading proposition might require a more targeted strategy again. The improvement came from making those decisions through one common customer and commercial strategy.</p>
+
+      <h2 id="proactive">Making Product Marketing proactive as well as reactive</h2>
+      <p>As PMM developed closer relationships with Growth, the function also became less dependent on formal requests coming from Product. Opportunities could originate from customer or channel insight as well as the roadmap. Lifecycle might identify a segment displaying a particular behaviour, Campaigns could identify an engagement opportunity around an existing product, or PMM research could reveal a proposition gap worth exploring. Product Marketing could then work with Growth and Product to determine whether that insight justified an experiment, campaign or product change.</p>
+
+      <p>For selected initiatives, customer research and focus groups also allowed us to test propositions earlier. Rather than waiting until after launch to understand whether customers recognised the value, research could help identify what customers cared about, where they became confused and what might prevent adoption. This created a more useful feedback loop in which Product developments generated GTM opportunities while customer and Growth insight could also influence Product.</p>
+
+      <h2 id="standardise">Standardising the model across a four-person team</h2>
+      <p>As the Product Marketing team grew to four people, consistency became increasingly important. Individual PMMs still needed judgement and flexibility, but Product, Growth, Creative, Legal and Compliance should not experience a completely different process depending on who owned the launch. I led the development of common workflows, GTM templates, briefing structures and knowledge resources that could be reused across the team.</p>
+
+      <p>For a major initiative, shared documentation could cover:</p>
+      <ul>
+        <li>product and market context, customer segments and proposition</li>
+        <li>positioning and messaging hierarchy</li>
+        <li>business and marketing objectives</li>
+        <li>channel strategy and stakeholder ownership</li>
+        <li>creative, communications and regulatory requirements</li>
+        <li>launch timeline, sequencing and measurement approach</li>
+      </ul>
+
+      <p>We also developed reusable knowledge banks so that previous customer insight, messaging work and launch learnings could inform new initiatives rather than remaining isolated within individual projects. I introduced AI-assisted automation into selected parts of the workflow as well. Repetitive work involved in converting structured intake information into initial briefing or GTM documentation could be accelerated, while decisions around the customer, proposition, positioning, prioritisation and strategy remained with the PMM.</p>
+
+      <h2 id="portfolio">Applying the framework across different product categories</h2>
+      <p>The value of the model became particularly clear as Crypto.com expanded into products aimed at very different customer segments. My own work included initiatives across the Exchange and retail ecosystem, including launches connected to more advanced trading and traditional financial-market exposure. Products linked to equities, commodities and indices presented a different GTM challenge from a conventional retail crypto feature because the customer could be more sophisticated, the product required different education and the relevant acquisition and retention channels needed to reflect the behaviour of active traders.<sup><a href="#source-1">1</a></sup></p>
+
+      <div class="product-examples" aria-label="Examples of product categories supported by the operating model">
+        <div class="product-panel exchange">
+          <div class="product-top"><span class="product-label">Exchange · Advanced trading</span></div>
+          <div class="product-bottom">
+            <h3>Multi-asset trading</h3>
+            <p>Different audiences, education requirements and distribution choices across equities, commodities, indices and advanced trading experiences.</p>
+            <a href="https://crypto.com/us/product-news/exchange-tradfi-perpetuals-launch" target="_blank" rel="noopener">View public product context ↗</a>
+          </div>
+        </div>
+        <div class="product-panel app">
+          <div class="product-top"><span class="product-label">App · Consumer investing</span></div>
+          <div class="product-bottom">
+            <h3>Tokenized Stocks</h3>
+            <p>A consumer proposition requiring a simpler explanation of a technically complex product and a different segmentation and channel approach.</p>
+            <a href="https://crypto.com/us/product-news/tokenized-stocks-launch" target="_blank" rel="noopener">View public product context ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <p>Prediction-market experiences created another proposition again, with different customer motivations, engagement patterns and distribution opportunities.<sup><a href="#source-2">2</a></sup> The framework therefore did not exist to make every launch look identical. It standardised how the organisation reached the right strategic decisions while allowing the customer, proposition, messaging and channel mix to remain specific to each product.</p>
+
+      <h2 id="impact">What changed</h2>
+      <p>The most visible improvement was the breadth and structure of major product launches. A strategic release that might previously have involved two or three channels could now activate six or seven relevant Growth and Marketing capabilities through a common GTM strategy. The wider operating model also changed how Product Marketing worked earlier in the process and how a relatively lean team allocated its time.</p>
+
+      <ul>
+        <li>PMM became involved earlier in the product lifecycle and customer research could influence propositions before launch.</li>
+        <li>Requests were classified and prioritised more deliberately, with Product leadership gaining greater visibility into GTM priorities.</li>
+        <li>Tier 1 launches received deeper cross-functional Growth support and specialist teams worked from structured PMM briefs.</li>
+        <li>Four PMMs operated through a shared framework, reusable knowledge and more consistent launch documentation.</li>
+        <li>Automation reduced repetitive preparation work and PMM could originate proactive growth opportunities as well as respond to Product requests.</li>
+      </ul>
+
+      <p>The framework ultimately allowed a four-person Product Marketing team to handle approximately 20 to 30 incoming requests during a normal month, while concentrating deeper GTM investment on around 11 to 12 strategically important initiatives across an annual cycle. For me, the project demonstrated that scaling Product Marketing is as much an operating-model challenge as it is a messaging challenge. When a business spans multiple products, customer segments and specialist Growth functions, the quality of a launch depends heavily on whether those teams are working from the same customer problem, entering the process at the right point and pursuing the same commercial objective. The work at Crypto.com was about creating that connective layer: moving customer thinking further upstream, improving prioritisation and giving the most important products a structured path into the wider Growth organisation.</p>
+
+      <section class="sources" id="sources">
+        <h2>Public product context</h2>
+        <ol>
+          <li id="source-1"><a href="https://crypto.com/us/product-news/exchange-tradfi-perpetuals-launch" target="_blank" rel="noopener">Crypto.com, Exchange TradFi perpetuals launch</a>.</li>
+          <li id="source-2"><a href="https://crypto.com/eea/company-news/cryptocom-launches-og-a-new-prediction-market-experience" target="_blank" rel="noopener">Crypto.com, OG prediction-market launch</a>.</li>
+          <li><a href="https://crypto.com/us/product-news/tokenized-stocks-launch" target="_blank" rel="noopener">Crypto.com, Tokenized Stocks launch</a>.</li>
+        </ol>
+      </section>
+    </article>
+  </div>
+
+  <section class="next-project shell">
+    <div>
+      <div class="small">Next case study</div>
+      <h2>Uphold consumer growth &amp; retention</h2>
+    </div>
+    <span>Coming next</span>
+  </section>
+</main>
+
+<footer class="shell">
+  <div class="footer-grid">
+    <span>© 2026 Ilir Laro</span>
+    <div class="footer-links">
+      <a href="mailto:ilir9641@googlemail.com">Email</a>
+      <a href="https://www.linkedin.com/in/ilirlaro/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com/ilir_onchain" target="_blank" rel="noopener">X</a>
+      <a href="https://github.com/ilirlaro" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+<script>
+const btn=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.primary-nav');
+if(btn&&nav){
+  btn.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',String(open));
+  });
+}
+</script>
+</body>
+</html>
