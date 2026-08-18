@@ -170,7 +170,7 @@ button, input, textarea, select { font: inherit; }
 .hero-media {
   margin: 0;
   width: 100%;
-  max-width: 360px;
+  max-width: 390px;
   justify-self: end;
   background: #d5d1c8;
   overflow: hidden;
@@ -178,7 +178,7 @@ button, input, textarea, select { font: inherit; }
 .hero-photo {
   display: block;
   width: 100%;
-  height: 360px;
+  height: 340px;
   object-fit: cover;
   object-position: 50% 50%;
   filter: grayscale(100%) contrast(.97) brightness(1.03);
@@ -221,7 +221,7 @@ button, input, textarea, select { font: inherit; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 12px;
   min-height: 38px;
   color: var(--ink);
 }
@@ -259,10 +259,13 @@ a.brand:focus-visible {
   min-width: 164px;
 }
 .brand-crypto .brand-name {
-  font-size: 18px;
-  font-weight: 650;
-  letter-spacing: -0.025em;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   text-transform: lowercase;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: scaleX(1.06);
+  transform-origin: left center;
 }
 .crypto-official-logo {
   width: 31px;
@@ -591,7 +594,7 @@ a.press-logo:focus-visible {
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">ILIR LARO</h1>
-        <p class="hero-lead">Turning complex financial products into clear go-to-market and growth strategies.</p>
+        <p class="hero-lead">Turning complex financial products into clear go-to-market<br class="desktop-break"><span class="no-break">and growth strategies.</span></p>
         <p class="hero-current">Currently at Crypto.com. Previously Binance, Uphold and Litecoin Foundation.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="/work/">Explore my work</a>
