@@ -274,17 +274,14 @@ a.brand:focus-visible {
   border-radius: 50%;
 }
 
-.press { padding-top: 34px; padding-bottom: 28px; }
+.press { padding-top: 34px; padding-bottom: 42px; }
 .section-intro { margin: 26px 0 0; color: var(--muted); font-size: 13px; }
 .press-logos {
   margin-top: 27px;
   display: grid;
   grid-template-columns: 1.1fr .9fr 1fr 1.15fr 1fr;
   gap: 34px;
-  align-items: center;
-
-  min-height: 44px;
-}
+  align-items: center;}
 .press-logo {
   display: inline-flex;
   align-items: center;
@@ -318,9 +315,7 @@ a.press-logo:focus-visible {
 .section-heading.compact { font-size: clamp(30px, 2.8vw, 40px); }
 
 .work { padding-top: 34px; }
-.press + .work {
-  margin-top: 34px;
-}
+.press + .work { margin-top: 0; }
 .case-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -512,7 +507,7 @@ a.press-logo:focus-visible {
   .hero-media figcaption { height: 42px; padding-inline: 14px; font-size: 8px; }
 
   .section-space { margin-top: 58px; }
-  .press + .work { margin-top: 28px; padding-top: 28px; }
+  .press + .work { margin-top: 0; padding-top: 28px; }
   .brand-strip, .press { padding-top: 28px; padding-bottom: 34px; }
   .company-logos { grid-template-columns: 1fr; }
   .brand { min-height: 30px; }
@@ -641,19 +636,19 @@ a.press-logo:focus-visible {
     <section class="brand-strip shell section-rule" aria-labelledby="experience-across-title">
       <p class="eyebrow" id="experience-across-title">EXPERIENCE ACROSS</p>
       <div class="company-logos" aria-label="Companies">
-        <a class="brand brand-crypto" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
+        <a class="brand brand-crypto" href="/experience#crypto-com" aria-label="Read more about my experience at Crypto.com">
           <img class="crypto-official-logo" src="/crypto-com-icon.png" alt="" aria-hidden="true" draggable="false">
           <span class="crypto-wordmark-text">crypto.com</span>
         </a>
-        <a class="brand brand-binance" href="/experience/#binance" aria-label="Read more about my experience at Binance">
+        <a class="brand brand-binance" href="/experience#binance" aria-label="Read more about my experience at Binance">
           <img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/binance.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
           <span class="brand-name">BINANCE</span>
         </a>
-        <a class="brand brand-uphold" href="/experience/#uphold" aria-label="Read more about my experience at Uphold">
+        <a class="brand brand-uphold" href="/experience#uphold" aria-label="Read more about my experience at Uphold">
           <img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/uphold.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
           <span class="brand-name">Uphold</span>
         </a>
-        <a class="brand brand-litecoin" href="/experience/#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
+        <a class="brand brand-litecoin" href="/experience#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
           <img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/litecoin.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
           <span class="brand-name">LITECOIN FOUNDATION</span>
         </a>
@@ -706,28 +701,28 @@ a.press-logo:focus-visible {
       <p class="eyebrow">EXPERIENCE</p>
       <h2 class="section-heading compact" id="career-title">Career</h2>
       <div class="career-list" role="list">
-        <a class="career-row" role="listitem" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
+        <a class="career-row" role="listitem" href="/experience#crypto-com" aria-label="Read more about my experience at Crypto.com">
           <span class="career-date">2025 — PRESENT</span>
           <img class="career-logo crypto" src="/crypto-com-icon.png" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Crypto.com</span>
           <span class="career-role">VP, Product Marketing</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
-        <a class="career-row" role="listitem" href="/experience/#uphold" aria-label="Read more about my experience at Uphold">
+        <a class="career-row" role="listitem" href="/experience#uphold" aria-label="Read more about my experience at Uphold">
           <span class="career-date">2024 — 2025</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/uphold.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Uphold</span>
           <span class="career-role">VP, Consumer</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
-        <a class="career-row" role="listitem" href="/experience/#binance" aria-label="Read more about my experience at Binance">
+        <a class="career-row" role="listitem" href="/experience#binance" aria-label="Read more about my experience at Binance">
           <span class="career-date">2020 — 2024</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/binance.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Binance</span>
           <span class="career-role">Director, Integrated Marketing &amp; Campaigns</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
-        <a class="career-row" role="listitem" href="/experience/#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
+        <a class="career-row" role="listitem" href="/experience#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
           <span class="career-date">2018 — 2019</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/litecoin.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Litecoin Foundation</span>
