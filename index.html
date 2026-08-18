@@ -262,12 +262,8 @@ a.brand:focus-visible {
   width: 158px;
   height: 34px;
   display: block;
-  background-image: url("https://images.seeklogo.com/logo-png/36/1/crypto-com-logo-png_seeklogo-364131.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 174px 174px;
-  filter: grayscale(100%) contrast(1.25);
-  mix-blend-mode: multiply;
+  object-fit: contain;
+  object-position: left center;
 }
 .brand-litecoin .brand-icon {
   border-radius: 50%;
@@ -607,7 +603,7 @@ a.press-logo:focus-visible {
       <p class="eyebrow" id="experience-across-title">EXPERIENCE ACROSS</p>
       <div class="company-logos" aria-label="Companies">
         <a class="brand brand-crypto" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
-          <span class="crypto-official-logo" aria-hidden="true"></span>
+          <img class="crypto-official-logo" src="/crypto-com-logo.png" alt="" aria-hidden="true" draggable="false">
         </a>
         <a class="brand brand-binance" href="/experience/#binance" aria-label="Read more about my experience at Binance">
           <img class="brand-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/binance.svg" alt="" aria-hidden="true" onerror="this.style.display='none'">
