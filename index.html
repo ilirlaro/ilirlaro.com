@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ilir Laro | Product Marketing, GTM & Growth</title>
-  <meta name="description" content="Product marketing, GTM, growth and operational strategy across crypto, fintech and financial services. Currently at Crypto.com; previously Binance and Uphold.">
+  <meta name="description" content="Turning complex financial products into clear go-to-market and growth strategies. Currently at Crypto.com; previously Binance, Uphold and Litecoin Foundation.">
   <meta name="author" content="Ilir Laro">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#f5f3ee">
@@ -17,12 +17,12 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ilir Laro">
   <meta property="og:title" content="Ilir Laro | Product Marketing, GTM & Growth">
-  <meta property="og:description" content="Product marketing, GTM, growth and operational strategy across crypto, fintech and financial services. Currently at Crypto.com; previously Binance and Uphold.">
+  <meta property="og:description" content="Turning complex financial products into clear go-to-market and growth strategies. Currently at Crypto.com; previously Binance, Uphold and Litecoin Foundation.">
   <meta property="og:url" content="https://ilirlaro.com/">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Ilir Laro | Product Marketing, GTM & Growth">
-  <meta name="twitter:description" content="Product marketing, GTM, growth and operational strategy across crypto, fintech and financial services. Currently at Crypto.com; previously Binance and Uphold.">
+  <meta name="twitter:description" content="Turning complex financial products into clear go-to-market and growth strategies. Currently at Crypto.com; previously Binance, Uphold and Litecoin Foundation.">
   <meta name="twitter:creator" content="@ilir_onchain">
 
   <script type="application/ld+json">
@@ -346,7 +346,9 @@ a.press-logo:focus-visible {
 .career-date { font-size: 9px; color: var(--muted); }
 .career-company { font-size: 16px; font-weight: 600; }
 .career-role { font-size: 11px; color: var(--muted); }
-.career-arrow { text-align: right; font-size: 19px; }
+.career-arrow { text-align: right; font-size: 19px; transition:transform .18s ease; }
+.career-row:hover { opacity:1; }
+.career-row:hover .career-arrow { transform:translateX(4px); }
 
 .ideas { padding-top: 18px; }
 .idea-list { margin-top: 16px; border-top: 1px solid var(--line); }
@@ -559,7 +561,7 @@ a.press-logo:focus-visible {
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="/work/">Work</a>
         <a href="#ideas">Ideas</a>
-        <a href="#advisory">Advisory</a>
+        <a href="/advisory/">Advisory</a>
         <a href="/about/">About</a>
       </nav>
     </div>
@@ -569,7 +571,7 @@ a.press-logo:focus-visible {
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">Ilir Laro</h1>
-        <p class="hero-lead">Product marketing, go-to-market, growth and operational strategy across crypto, fintech and financial services.</p>
+        <p class="hero-lead">Turning complex financial products into clear go-to-market and growth strategies.</p>
         <p class="hero-current">Currently at Crypto.com. Previously Binance, Uphold and Litecoin Foundation.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="/work/">Explore my work</a>
@@ -651,30 +653,30 @@ a.press-logo:focus-visible {
       <p class="eyebrow">EXPERIENCE</p>
       <h2 class="section-heading compact" id="career-title">Career</h2>
       <div class="career-list" role="list">
-        <div class="career-row" role="listitem">
+        <a class="career-row" role="listitem" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
           <span class="career-date">2025 — PRESENT</span>
           <span class="career-company">Crypto.com</span>
           <span class="career-role">VP, Product Marketing</span>
           <span class="career-arrow" aria-hidden="true">→</span>
-        </div>
-        <div class="career-row" role="listitem">
+        </a>
+        <a class="career-row" role="listitem" href="/experience/#uphold" aria-label="Read more about my experience at Uphold">
           <span class="career-date">2024 — 2025</span>
           <span class="career-company">Uphold</span>
           <span class="career-role">VP, Consumer</span>
           <span class="career-arrow" aria-hidden="true">→</span>
-        </div>
-        <div class="career-row" role="listitem">
+        </a>
+        <a class="career-row" role="listitem" href="/experience/#binance" aria-label="Read more about my experience at Binance">
           <span class="career-date">2020 — 2024</span>
           <span class="career-company">Binance</span>
           <span class="career-role">Director, Integrated Marketing &amp; Campaigns</span>
           <span class="career-arrow" aria-hidden="true">→</span>
-        </div>
-        <div class="career-row" role="listitem">
+        </a>
+        <a class="career-row" role="listitem" href="/experience/#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
           <span class="career-date">2018 — 2019</span>
           <span class="career-company">Litecoin Foundation</span>
           <span class="career-role">Associate, Community Manager</span>
           <span class="career-arrow" aria-hidden="true">→</span>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -708,13 +710,13 @@ a.press-logo:focus-visible {
       <div class="advisory-panel">
         <p class="eyebrow eyebrow-light">ADVISORY</p>
         <h2 id="advisory-title">Work with me.</h2>
-        <p>I advise founders and teams across product marketing, growth,<br class="desktop-break"> go-to-market and regulated financial products.</p>
+        <p>I work with founders and leadership teams across crypto, Web3 and fintech on practical growth problems, from taking a product to market to entering new markets.</p>
         <div class="advisory-types" aria-label="Advisory services">
-          <span>STRATEGY SESSION</span>
-          <span>GTM SPRINT</span>
-          <span>ONGOING ADVISORY</span>
+          <span>GO-TO-MARKET STRATEGY</span>
+          <span>GROWTH MARKETING</span>
+          <span>INTERNATIONAL EXPANSION</span>
         </div>
-        <a class="button button-light" href="#about">Explore advisory</a>
+        <a class="button button-light" href="/advisory/">Explore advisory</a>
       </div>
     </section>
 
