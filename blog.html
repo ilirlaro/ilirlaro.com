@@ -725,6 +725,103 @@ footer{padding:62px 0 42px}
   }
 }
 
+
+/* canonical site header: identical on every page */
+.site-header{
+  padding-top:38px!important;
+}
+.header-inner{
+  height:58px!important;
+  min-height:58px!important;
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:space-between!important;
+  border-bottom:1px solid var(--line)!important;
+}
+.wordmark{
+  margin:0!important;
+  font-size:14px!important;
+  font-weight:800!important;
+  line-height:1.2!important;
+  letter-spacing:-.015em!important;
+}
+.primary-nav{
+  margin:0!important;
+  display:flex;
+  align-items:flex-start!important;
+  gap:42px!important;
+  font-size:14px!important;
+  font-weight:500!important;
+  line-height:1.2!important;
+}
+.primary-nav a{
+  line-height:1.2!important;
+}
+.menu-toggle{
+  margin:0!important;
+  line-height:1.2!important;
+}
+
+@media (max-width:900px){
+  :root{--side:24px}
+  .site-header{
+    padding-top:25px!important;
+  }
+  .header-inner{
+    height:48px!important;
+    min-height:48px!important;
+    align-items:flex-start!important;
+  }
+  .wordmark{
+    font-size:14px!important;
+    line-height:1.2!important;
+  }
+  .menu-toggle{
+    display:inline-flex!important;
+    align-items:flex-start!important;
+    border:0!important;
+    background:transparent!important;
+    color:var(--ink)!important;
+    padding:0!important;
+    margin:0!important;
+    font-size:13px!important;
+    font-weight:400!important;
+    line-height:1.2!important;
+    cursor:pointer!important;
+  }
+  .primary-nav{
+    position:absolute!important;
+    left:var(--side)!important;
+    right:var(--side)!important;
+    top:73px!important;
+    z-index:30!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:0!important;
+    padding:0!important;
+    min-width:0!important;
+    background:var(--bg)!important;
+    border:1px solid var(--line)!important;
+  }
+  .primary-nav.open,
+  .primary-nav.is-open{
+    display:flex!important;
+  }
+  .primary-nav a{
+    padding:15px 16px!important;
+    border-bottom:1px solid var(--line)!important;
+    line-height:1.2!important;
+  }
+  .primary-nav a:last-child{
+    border-bottom:0!important;
+  }
+}
+
+@media (max-width:620px){
+  :root{--side:18px}
+}
+
 </style>
 </head>
 <body>
