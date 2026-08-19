@@ -1,11 +1,14 @@
+---
+permalink: /blog/prediction-markets/
+---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Experience | Ilir Laro</title>
-<meta name="description" content="Ilir Laro's experience across gaming, esports, Web3 and fintech, including GameBattles, Endeavor Streaming, Litecoin Foundation, Binance, Uphold and Crypto.com.">
-<link rel="canonical" href="https://ilirlaro.com/experience/">
+<title>What product teams can learn from prediction markets | Ilir Laro</title>
+<meta name="description" content="Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.">
+<link rel="canonical" href="https://ilirlaro.com/blog/prediction-markets/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
 <style>
 :root{
@@ -40,7 +43,7 @@ button{font:inherit}
 .wordmark{font-size:14px;font-weight:800;letter-spacing:-.015em}
 .primary-nav{display:flex;gap:42px;font-size:14px;font-weight:500}
 .primary-nav a[aria-current="page"]{font-weight:700}
-.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:400;font-size:13px}
+.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:650}
 .eyebrow{
   margin:0 0 18px;font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase
 }
@@ -219,7 +222,6 @@ footer{padding:62px 0 42px}
   }
   .primary-nav.open{display:flex}
   .menu-toggle{display:block}
-  .menu-toggle{font-size:13px;font-weight:400;line-height:1.2}
   .page-hero{padding:56px 0 58px}
   .page-hero h1{font-size:54px}
   .page-hero .lead,.case-deck{font-size:18px}
@@ -531,329 +533,232 @@ footer{padding:62px 0 42px}
 }
 
 
-/* Experience page */
-.experience-hero{
-  padding:96px 0 78px;
+/* Editorial article */
+.idea-article-hero{
+  padding:88px 0 66px;
 }
-.experience-hero-grid{
-  display:grid;
-  grid-template-columns:190px minmax(0,1fr);
-  gap:36px;
+.article-topline{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:center;
+  margin-bottom:50px;
 }
-.experience-hero .eyebrow{margin-top:10px}
-.experience-hero h1{
+.article-back{
+  font-size:11px;
+  font-weight:650;
+}
+.article-meta{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.idea-article-hero h1{
   margin:0;
-  max-width:980px;
-  font-size:clamp(58px,7vw,100px);
-  line-height:.95;
-  letter-spacing:-.064em;
+  max-width:1020px;
+  font-size:clamp(52px,6.2vw,88px);
+  line-height:.98;
+  letter-spacing:-.058em;
   font-weight:500;
 }
-.experience-hero .lead{
-  grid-column:2;
+.idea-article-hero .deck{
   margin:34px 0 0;
   max-width:790px;
+  font-size:20px;
+  line-height:1.58;
   color:var(--muted);
-  font-size:21px;
-  line-height:1.55;
-  letter-spacing:-.018em;
+  letter-spacing:-.015em;
 }
 
-.path-strip{
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:28px 0;
+.article-layout{
   display:grid;
-  grid-template-columns:190px 1fr;
+  grid-template-columns:190px minmax(0,790px);
   gap:36px;
+  border-top:1px solid var(--line);
+  padding:58px 0 92px;
 }
-.path-strip .label{
+.article-side{
+  position:sticky;
+  top:32px;
+  align-self:start;
+}
+.article-side .label{
   font-size:10px;
   font-weight:750;
   letter-spacing:.1em;
   text-transform:uppercase;
 }
-.path-flow{
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:13px;
-  font-size:16px;
-  font-weight:550;
-}
-.path-flow span:nth-child(even){color:var(--muted);font-weight:400}
-
-.role-list{
-  padding:34px 0 88px;
-}
-.role-block{
-  scroll-margin-top:30px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-  padding:52px 0 62px;
-  border-bottom:1px solid var(--line);
-}
-.role-block:last-child{border-bottom:0}
-.role-meta .date{
-  display:block;
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.09em;
-  text-transform:uppercase;
+.article-side p{
+  margin:16px 0 0;
+  max-width:140px;
   color:var(--muted);
+  font-size:11px;
+  line-height:1.55;
 }
-.role-meta .company{
-  display:block;
-  margin-top:16px;
-  font-size:19px;
-  font-weight:650;
-}
-.role-main h2{
-  margin:0;
+.idea-copy h2{
+  margin:68px 0 22px;
   font-size:35px;
   line-height:1.08;
   letter-spacing:-.04em;
   font-weight:550;
 }
-.role-main p{
-  margin:20px 0 0;
-  font-size:16px;
-  line-height:1.74;
+.idea-copy h2:first-child{margin-top:0}
+.idea-copy p{
+  margin:0 0 24px;
+  font-size:17px;
+  line-height:1.78;
   color:#2a2926;
 }
-.role-focus{
-  margin:26px 0 0;
-  padding-left:18px;
-  font-size:13px;
-  line-height:1.62;
-  color:var(--muted);
+.idea-copy ul{
+  margin:5px 0 28px;
+  padding-left:20px;
+  color:#2a2926;
 }
-.role-focus li{margin:7px 0}
-.role-links{
-  margin-top:28px;
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:12px;
-  font-weight:650;
+.idea-copy li{
+  margin:9px 0;
+  font-size:15px;
+  line-height:1.65;
 }
-.role-links a{text-decoration:underline;text-underline-offset:4px}
-
-.experience-close{
+.idea-callout{
+  margin:44px 0;
+  padding:32px 0;
   border-top:1px solid var(--line);
-  padding:36px 0 82px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
+  border-bottom:1px solid var(--line);
 }
-.experience-close .label{
+.idea-callout p{
+  margin:0!important;
+  font-size:28px!important;
+  line-height:1.38!important;
+  letter-spacing:-.032em;
+  color:var(--ink)!important;
+  font-weight:500;
+}
+.article-next{
+  border-top:1px solid var(--line);
+  padding:34px 0 80px;
+}
+.article-next .small{
   font-size:10px;
   font-weight:750;
   letter-spacing:.1em;
   text-transform:uppercase;
+  color:var(--muted);
 }
-.experience-close p{
-  margin:0 0 22px;
-  font-size:17px;
-  line-height:1.74;
-  color:#2a2926;
-}
-.experience-close .links{
+.article-next a{
+  margin-top:20px;
   display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:650;
+  justify-content:space-between;
+  gap:30px;
+  align-items:flex-end;
 }
+.article-next h2{
+  margin:0;
+  max-width:700px;
+  font-size:38px;
+  line-height:1.05;
+  letter-spacing:-.04em;
+  font-weight:550;
+}
+.article-next span{font-size:13px;font-weight:650;white-space:nowrap}
 
 @media(max-width:900px){
-  .experience-hero-grid,
-  .path-strip,
-  .role-block,
-  .experience-close{
-    grid-template-columns:1fr;
-    gap:22px;
-  }
-  .experience-hero .lead{grid-column:1}
+  .article-layout{grid-template-columns:1fr;gap:28px}
+  .article-side{position:static}
+  .article-side p{max-width:560px}
 }
 @media(max-width:640px){
-  .experience-hero{padding:64px 0 56px}
-  .experience-hero h1{font-size:clamp(48px,14vw,72px)}
-  .experience-hero .lead{font-size:18px}
-  .role-block{padding:44px 0 52px}
-  .role-main h2{font-size:30px}
+  .idea-article-hero{padding:60px 0 50px}
+  .article-topline{margin-bottom:36px;align-items:flex-start}
+  .idea-article-hero h1{font-size:clamp(44px,13vw,68px)}
+  .idea-article-hero .deck{font-size:18px}
+  .article-layout{padding:44px 0 64px}
+  .idea-copy p{font-size:16px;line-height:1.73}
+  .idea-copy h2{font-size:30px;margin-top:54px}
+  .idea-callout p{font-size:23px!important}
+  .article-next a{align-items:flex-start;flex-direction:column}
+  .article-next h2{font-size:31px}
 }
 </style>
 </head>
 <body>
-<!-- build: experience-page -->
-
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/">ILIR LARO</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a>
-      <a href="/blog/">Blog</a>
-      <a href="/experience/" aria-current="page">Experience</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/experience/">Experience</a>
       <a href="/advisory/">Advisory</a>
       <a href="/about/">About</a>
     </nav>
   </div>
 </header>
-
-
 <main>
-  <section class="experience-hero shell">
-    <div class="experience-hero-grid">
-      <p class="eyebrow">Experience</p>
-      <h1>A career across gaming, Web3 and fintech.</h1>
-      <p class="lead">My roles have moved across community, marketing, operations, retention, product marketing and go-to-market strategy as the problems I was working on became broader. This is the career view behind the individual case studies.</p>
+  <section class="idea-article-hero shell">
+    <div class="article-topline">
+      <a class="article-back" href="/blog/">← All ideas</a>
+      <div class="article-meta"><span>Product</span><span>5 min read</span></div>
     </div>
+    <h1>What product teams can learn from prediction markets</h1>
+    <p class="deck">Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.</p>
   </section>
 
-  <section class="path-strip shell" aria-label="Career path">
-    <div class="label">Career path</div>
-    <div class="path-flow"><span>Gaming &amp; esports</span><span>→</span><span>Web3</span><span>→</span><span>Fintech</span></div>
-  </section>
+  <div class="article-layout shell">
+    <aside class="article-side">
+      <div class="label">Ilir Laro</div>
+      <p>Personal observations shaped by work across crypto, product, growth and financial technology.</p>
+    </aside>
+    <article class="idea-copy">
+      
+<h2>A product built around uncertainty</h2>
+<p>Prediction markets are interesting because they make something most products hide unusually visible: uncertainty. A market begins with a question whose answer is not yet known, participants express a view through action rather than a survey, and the product continuously turns those actions into a changing signal. You can disagree with how accurately any individual market reflects reality and still find the product design instructive.</p>
 
-  <section class="role-list shell">
-    <article class="role-block" id="crypto-com">
-      <div class="role-meta">
-        <span class="date">2025 — Present</span>
-        <span class="company">Crypto.com</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Product Marketing</h2>
-        <p>I joined a rebuilt Product Marketing team as the organisation expanded across a broader portfolio of financial products. My work has focused on moving PMM earlier into the product lifecycle, creating a more structured global GTM operating model and connecting Product with specialist Growth, Creative, Legal and Compliance teams.</p>
-        <ul class="role-focus">
-          <li>Product positioning, segmentation, messaging and GTM strategy</li>
-          <li>Global intake, prioritisation and launch operating models</li>
-          <li>Advanced trading, retail and emerging financial-product launches</li>
-          <li>Cross-functional Growth activation and scalable PMM workflows</li>
-        </ul>
-        <div class="role-links"><a href="/work/crypto-com-product-marketing-gtm/">Read the Crypto.com case study →</a></div>
-      </div>
+<p>What interests me is not only the financial mechanism. Prediction markets force product teams to be precise about the outcome, the rules, the time horizon and the action available to the customer. They also create immediate feedback. A participant can see whether the rest of the market agrees with them, watch that view change as new information arrives and decide whether to act again. Most products have a much weaker relationship between customer belief and observable feedback.</p>
+
+<h2>Clarity becomes part of the product</h2>
+<p>A prediction market cannot function properly if the underlying question is vague. The outcome needs to be understandable enough that participants know what they are expressing a view on and resolvable enough that the market can eventually determine what happened. That constraint creates a useful lesson for other product teams: ambiguity that feels acceptable internally can become expensive once it reaches a customer.</p>
+
+<p>Teams often describe products using the language of the organisation rather than the language of the decision the customer is trying to make. Features, technical capabilities and roadmap terminology can become the centre of the proposition. Prediction markets work in the opposite direction. The customer starts with the question and the product exists around that question. For many products, particularly complex financial ones, beginning with the customer's decision rather than the underlying machinery would improve both positioning and design.</p>
+
+<div class="idea-callout"><p>Good products reduce the distance between what the customer believes, what they can do and what they learn afterwards.</p></div>
+
+<h2>Action produces better information than stated intent</h2>
+<p>Another useful characteristic is that prediction markets ask people to commit something to their view. That does not make the resulting signal perfect, but it creates a different kind of information from asking what somebody says they might do. Product teams regularly encounter this gap. Customers can tell you they value a feature, say they would pay for something or express enthusiasm during research, then behave very differently once the product is available.</p>
+
+<p>This does not mean research is unhelpful. It means behavioural evidence should eventually sit beside stated preference. The closer a product team can get to observing a real decision under realistic conditions, the more useful the feedback becomes. That might mean testing willingness to pay, measuring whether somebody completes a meaningful workflow, looking at repeat behaviour or running a lightweight experiment before committing to a large build.</p>
+
+<h2>Feedback loops need to be visible</h2>
+<p>Prediction markets also show the value of a tight feedback loop. New information enters, prices move, participants reassess and the market changes again. The product itself makes that loop visible. Many digital products are less explicit. A user takes an action, but the benefit may be delayed, unclear or difficult to attribute, which weakens the reason to return.</p>
+
+<p>For product and growth teams, that raises a practical question: after the customer takes the action you want, what do they immediately understand that they did not understand before? A trading product may show a position and its performance. A fitness product can show progress. A learning product can make improvement visible. A financial app can show what changed in the customer's position or behaviour. The mechanism will differ, but products become easier to repeat when the customer can see the consequence of the previous action.</p>
+
+<h2>Participation is part of the value</h2>
+<p>Prediction markets are also social without needing to look like social networks. The customer is not interacting only with software; they are interacting with an aggregate view created by other participants. That can make the product more interesting because every new participant can contribute information, liquidity or disagreement that changes the experience for everyone else.</p>
+
+<p>Not every product should manufacture a network effect, but teams can still ask whether customer participation creates value beyond the individual transaction. Reviews, benchmarks, rankings, community knowledge, shared liquidity and collaborative datasets are different versions of the same idea. When participation improves the product for the next user, distribution and product quality can begin reinforcing each other.</p>
+
+<h2>The lesson is not to copy the market</h2>
+<p>I would not take these observations and conclude that every product needs probabilities, trading mechanics or a public crowd signal. The interesting part is the discipline underneath the format. Prediction markets make the customer question explicit, require action rather than passive interest, produce continuous feedback and create an environment where other participants affect the value of the experience.</p>
+
+<p>Those principles are useful well beyond prediction products. If a team can make the customer's decision clearer, test behaviour rather than relying only on intention, shorten the distance between action and feedback, and find places where participation genuinely improves the product, it can often create a stronger reason to return. Prediction markets simply make those mechanics easier to see.</p>
+
     </article>
+  </div>
 
-    <article class="role-block" id="uphold">
-      <div class="role-meta">
-        <span class="date">2024 — 2025</span>
-        <span class="company">Uphold</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Consumer</h2>
-        <p>At Uphold, my work centred on consumer retention, commercial value and the relationship between customer behaviour and the broader product experience. I developed a more structured approach to high-value customer retention, helped build the VIP proposition and explored new commercial mechanisms for re-engaging customers who held meaningful assets but had become relatively passive.</p>
-        <ul class="role-focus">
-          <li>Consumer retention, lifecycle and customer-value strategy</li>
-          <li>VIP proposition and account-management operating model</li>
-          <li>Behavioural segmentation and churn-risk signals</li>
-          <li>Commercial proposition design for dormant asset holders</li>
-        </ul>
-        <div class="role-links"><a href="/work/uphold-retention-monetisation/">Read the Uphold case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="binance">
-      <div class="role-meta">
-        <span class="date">2020 — 2024</span>
-        <span class="company">Binance</span>
-      </div>
-      <div class="role-main">
-        <h2>Director, Integrated Marketing &amp; Campaigns</h2>
-        <p>My four years at Binance covered a period of rapid growth, international expansion and significant regulatory change. I worked across integrated marketing, operations and UK market execution, including product and campaign launches, customer communications, cross-functional operating models and the implementation required for the UK's cryptoasset Financial Promotions regime.</p>
-        <ul class="role-focus">
-          <li>Integrated marketing, GTM and multi-channel campaign strategy</li>
-          <li>UK market operations and cross-functional launch readiness</li>
-          <li>Regulatory GTM and Financial Promotions implementation</li>
-          <li>Product, Marketing, Operations, Legal and Compliance coordination</li>
-        </ul>
-        <div class="role-links"><a href="/work/binance-uk-financial-promotions/">Read the Binance UK case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="litecoin">
-      <div class="role-meta">
-        <span class="date">2018 — 2019</span>
-        <span class="company">Litecoin Foundation</span>
-      </div>
-      <div class="role-main">
-        <h2>Associate, Community Manager</h2>
-        <p>The Litecoin Foundation was where crypto became more than an interest for me. My role sat close to the community and education side of an emerging industry, helping communicate the technology to a global audience and supporting initiatives designed to increase awareness and adoption.</p>
-        <ul class="role-focus">
-          <li>Global community management and education</li>
-          <li>Content and ecosystem communications</li>
-          <li>Partnership activation, including helping bridge the UFC 232 opportunity</li>
-          <li>Early-stage crypto adoption and community growth</li>
-        </ul>
-        <div class="role-links"><a href="/work/litecoin-ufc-232/">Read the Litecoin x UFC 232 case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="endeavor-streaming">
-      <div class="role-meta">
-        <span class="date">2017 — 2019</span>
-        <span class="company">Endeavor Streaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Content Handling</h2>
-        <p>I worked in the London operation supporting live and on-demand streaming services across major sports and entertainment properties. The role gave me direct exposure to the operational side of premium digital media, including the wider Endeavor and UFC ecosystem, and became an important bridge between my earlier gaming background and the partnership work I later supported in crypto.</p>
-        <ul class="role-focus">
-          <li>Client operations across live and on-demand streaming products</li>
-          <li>Operational support for premium sports and entertainment platforms</li>
-          <li>Experience within the wider Endeavor ecosystem, including UFC-related services</li>
-          <li>Cross-functional issue resolution in a high-volume live-event environment</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="umg-media">
-      <div class="role-meta">
-        <span class="date">2016 — 2018</span>
-        <span class="company">UMG Media</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Customer Service</h2>
-        <p>My career began in gaming and esports, working directly with customers inside an industry that was still becoming professionalised. It gave me an early grounding in online communities, customer behaviour and operational problem-solving before I moved into crypto.</p>
-        <ul class="role-focus">
-          <li>High-volume customer support and community interaction</li>
-          <li>Dispute and process improvement</li>
-          <li>Gaming and esports customer experience</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="gamebattles">
-      <div class="role-meta">
-        <span class="date">2012 — 2014</span>
-        <span class="company">GameBattles / Major League Gaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Junior, Community Outreach</h2>
-        <p>This was my earliest professional experience in online communities and competitive gaming. GameBattles sat within the Major League Gaming ecosystem and gave me first-hand exposure to how large digital communities form around competition, identity and participation. MLG was later acquired by Activision Blizzard, with GameBattles continuing as part of the broader esports portfolio.</p>
-        <ul class="role-focus">
-          <li>Community outreach and engagement across competitive gaming audiences</li>
-          <li>Supporting online tournament communities and player communications</li>
-          <li>Early experience in esports, digital communities and audience behaviour</li>
-          <li>Remote collaboration within a fast-growing online gaming ecosystem</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <section class="experience-close shell">
-    <div class="label">More</div>
-    <div>
-      <p>The Work section goes deeper into selected projects, while LinkedIn has the conventional chronological version of my career. I use this page to show how the roles connect and where the focus of my work changed over time.</p>
-      <div class="links">
-        <a href="/work/">Selected work →</a>
-        <a href="https://www.linkedin.com/in/ilirlaro/" target="_blank" rel="noopener">LinkedIn →</a>
-      </div>
-    </div>
+  <section class="article-next shell">
+    <div class="small">Next idea</div>
+    <a href="/blog/building-my-own-corner-of-the-internet/">
+      <h2>Building my own corner of the internet</h2>
+      <span>Read →</span>
+    </a>
   </section>
 </main>
-
 <footer class="shell">
   <div class="footer-grid">
     <span>© 2026 Ilir Laro</span>

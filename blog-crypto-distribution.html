@@ -1,11 +1,14 @@
+---
+permalink: /blog/crypto-distribution/
+---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Experience | Ilir Laro</title>
-<meta name="description" content="Ilir Laro's experience across gaming, esports, Web3 and fintech, including GameBattles, Endeavor Streaming, Litecoin Foundation, Binance, Uphold and Crypto.com.">
-<link rel="canonical" href="https://ilirlaro.com/experience/">
+<title>Why crypto products still have a distribution problem | Ilir Laro</title>
+<meta name="description" content="Great technology does not remove the need to earn attention, trust and repeated customer behaviour. In crypto, distribution is often the harder product problem.">
+<link rel="canonical" href="https://ilirlaro.com/blog/crypto-distribution/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
 <style>
 :root{
@@ -40,7 +43,7 @@ button{font:inherit}
 .wordmark{font-size:14px;font-weight:800;letter-spacing:-.015em}
 .primary-nav{display:flex;gap:42px;font-size:14px;font-weight:500}
 .primary-nav a[aria-current="page"]{font-weight:700}
-.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:400;font-size:13px}
+.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:650}
 .eyebrow{
   margin:0 0 18px;font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase
 }
@@ -219,7 +222,6 @@ footer{padding:62px 0 42px}
   }
   .primary-nav.open{display:flex}
   .menu-toggle{display:block}
-  .menu-toggle{font-size:13px;font-weight:400;line-height:1.2}
   .page-hero{padding:56px 0 58px}
   .page-hero h1{font-size:54px}
   .page-hero .lead,.case-deck{font-size:18px}
@@ -531,329 +533,240 @@ footer{padding:62px 0 42px}
 }
 
 
-/* Experience page */
-.experience-hero{
-  padding:96px 0 78px;
+/* Editorial article */
+.idea-article-hero{
+  padding:88px 0 66px;
 }
-.experience-hero-grid{
-  display:grid;
-  grid-template-columns:190px minmax(0,1fr);
-  gap:36px;
+.article-topline{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:center;
+  margin-bottom:50px;
 }
-.experience-hero .eyebrow{margin-top:10px}
-.experience-hero h1{
+.article-back{
+  font-size:11px;
+  font-weight:650;
+}
+.article-meta{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.idea-article-hero h1{
   margin:0;
-  max-width:980px;
-  font-size:clamp(58px,7vw,100px);
-  line-height:.95;
-  letter-spacing:-.064em;
+  max-width:1020px;
+  font-size:clamp(52px,6.2vw,88px);
+  line-height:.98;
+  letter-spacing:-.058em;
   font-weight:500;
 }
-.experience-hero .lead{
-  grid-column:2;
+.idea-article-hero .deck{
   margin:34px 0 0;
   max-width:790px;
+  font-size:20px;
+  line-height:1.58;
   color:var(--muted);
-  font-size:21px;
-  line-height:1.55;
-  letter-spacing:-.018em;
+  letter-spacing:-.015em;
 }
 
-.path-strip{
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:28px 0;
+.article-layout{
   display:grid;
-  grid-template-columns:190px 1fr;
+  grid-template-columns:190px minmax(0,790px);
   gap:36px;
+  border-top:1px solid var(--line);
+  padding:58px 0 92px;
 }
-.path-strip .label{
+.article-side{
+  position:sticky;
+  top:32px;
+  align-self:start;
+}
+.article-side .label{
   font-size:10px;
   font-weight:750;
   letter-spacing:.1em;
   text-transform:uppercase;
 }
-.path-flow{
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:13px;
-  font-size:16px;
-  font-weight:550;
-}
-.path-flow span:nth-child(even){color:var(--muted);font-weight:400}
-
-.role-list{
-  padding:34px 0 88px;
-}
-.role-block{
-  scroll-margin-top:30px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-  padding:52px 0 62px;
-  border-bottom:1px solid var(--line);
-}
-.role-block:last-child{border-bottom:0}
-.role-meta .date{
-  display:block;
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.09em;
-  text-transform:uppercase;
+.article-side p{
+  margin:16px 0 0;
+  max-width:140px;
   color:var(--muted);
+  font-size:11px;
+  line-height:1.55;
 }
-.role-meta .company{
-  display:block;
-  margin-top:16px;
-  font-size:19px;
-  font-weight:650;
-}
-.role-main h2{
-  margin:0;
+.idea-copy h2{
+  margin:68px 0 22px;
   font-size:35px;
   line-height:1.08;
   letter-spacing:-.04em;
   font-weight:550;
 }
-.role-main p{
-  margin:20px 0 0;
-  font-size:16px;
-  line-height:1.74;
+.idea-copy h2:first-child{margin-top:0}
+.idea-copy p{
+  margin:0 0 24px;
+  font-size:17px;
+  line-height:1.78;
   color:#2a2926;
 }
-.role-focus{
-  margin:26px 0 0;
-  padding-left:18px;
-  font-size:13px;
-  line-height:1.62;
-  color:var(--muted);
+.idea-copy ul{
+  margin:5px 0 28px;
+  padding-left:20px;
+  color:#2a2926;
 }
-.role-focus li{margin:7px 0}
-.role-links{
-  margin-top:28px;
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:12px;
-  font-weight:650;
+.idea-copy li{
+  margin:9px 0;
+  font-size:15px;
+  line-height:1.65;
 }
-.role-links a{text-decoration:underline;text-underline-offset:4px}
-
-.experience-close{
+.idea-callout{
+  margin:44px 0;
+  padding:32px 0;
   border-top:1px solid var(--line);
-  padding:36px 0 82px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
+  border-bottom:1px solid var(--line);
 }
-.experience-close .label{
+.idea-callout p{
+  margin:0!important;
+  font-size:28px!important;
+  line-height:1.38!important;
+  letter-spacing:-.032em;
+  color:var(--ink)!important;
+  font-weight:500;
+}
+.article-next{
+  border-top:1px solid var(--line);
+  padding:34px 0 80px;
+}
+.article-next .small{
   font-size:10px;
   font-weight:750;
   letter-spacing:.1em;
   text-transform:uppercase;
+  color:var(--muted);
 }
-.experience-close p{
-  margin:0 0 22px;
-  font-size:17px;
-  line-height:1.74;
-  color:#2a2926;
-}
-.experience-close .links{
+.article-next a{
+  margin-top:20px;
   display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:650;
+  justify-content:space-between;
+  gap:30px;
+  align-items:flex-end;
 }
+.article-next h2{
+  margin:0;
+  max-width:700px;
+  font-size:38px;
+  line-height:1.05;
+  letter-spacing:-.04em;
+  font-weight:550;
+}
+.article-next span{font-size:13px;font-weight:650;white-space:nowrap}
 
 @media(max-width:900px){
-  .experience-hero-grid,
-  .path-strip,
-  .role-block,
-  .experience-close{
-    grid-template-columns:1fr;
-    gap:22px;
-  }
-  .experience-hero .lead{grid-column:1}
+  .article-layout{grid-template-columns:1fr;gap:28px}
+  .article-side{position:static}
+  .article-side p{max-width:560px}
 }
 @media(max-width:640px){
-  .experience-hero{padding:64px 0 56px}
-  .experience-hero h1{font-size:clamp(48px,14vw,72px)}
-  .experience-hero .lead{font-size:18px}
-  .role-block{padding:44px 0 52px}
-  .role-main h2{font-size:30px}
+  .idea-article-hero{padding:60px 0 50px}
+  .article-topline{margin-bottom:36px;align-items:flex-start}
+  .idea-article-hero h1{font-size:clamp(44px,13vw,68px)}
+  .idea-article-hero .deck{font-size:18px}
+  .article-layout{padding:44px 0 64px}
+  .idea-copy p{font-size:16px;line-height:1.73}
+  .idea-copy h2{font-size:30px;margin-top:54px}
+  .idea-callout p{font-size:23px!important}
+  .article-next a{align-items:flex-start;flex-direction:column}
+  .article-next h2{font-size:31px}
 }
 </style>
 </head>
 <body>
-<!-- build: experience-page -->
-
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/">ILIR LARO</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a>
-      <a href="/blog/">Blog</a>
-      <a href="/experience/" aria-current="page">Experience</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/experience/">Experience</a>
       <a href="/advisory/">Advisory</a>
       <a href="/about/">About</a>
     </nav>
   </div>
 </header>
-
-
 <main>
-  <section class="experience-hero shell">
-    <div class="experience-hero-grid">
-      <p class="eyebrow">Experience</p>
-      <h1>A career across gaming, Web3 and fintech.</h1>
-      <p class="lead">My roles have moved across community, marketing, operations, retention, product marketing and go-to-market strategy as the problems I was working on became broader. This is the career view behind the individual case studies.</p>
+  <section class="idea-article-hero shell">
+    <div class="article-topline">
+      <a class="article-back" href="/blog/">← All ideas</a>
+      <div class="article-meta"><span>Crypto</span><span>6 min read</span></div>
     </div>
+    <h1>Why crypto products still have a distribution problem</h1>
+    <p class="deck">Great technology does not remove the need to earn attention, trust and repeated customer behaviour. In crypto, distribution is often the harder product problem.</p>
   </section>
 
-  <section class="path-strip shell" aria-label="Career path">
-    <div class="label">Career path</div>
-    <div class="path-flow"><span>Gaming &amp; esports</span><span>→</span><span>Web3</span><span>→</span><span>Fintech</span></div>
-  </section>
+  <div class="article-layout shell">
+    <aside class="article-side">
+      <div class="label">Ilir Laro</div>
+      <p>Personal observations shaped by work across crypto, product, growth and financial technology.</p>
+    </aside>
+    <article class="idea-copy">
+      
+<h2>The product is only half the problem</h2>
+<p>Crypto has always been unusually good at producing technically interesting products and unusually inconsistent at getting ordinary customers to understand why they should use them. New chains, wallets, exchanges, protocols and financial products can attract enormous attention inside the industry while remaining almost invisible outside it. When adoption disappoints, the instinct is often to return to the product: add another feature, improve the interface, reduce a fee or explain the technology in greater detail. Sometimes that is exactly what is needed, but often the harder problem sits further downstream.</p>
 
-  <section class="role-list shell">
-    <article class="role-block" id="crypto-com">
-      <div class="role-meta">
-        <span class="date">2025 — Present</span>
-        <span class="company">Crypto.com</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Product Marketing</h2>
-        <p>I joined a rebuilt Product Marketing team as the organisation expanded across a broader portfolio of financial products. My work has focused on moving PMM earlier into the product lifecycle, creating a more structured global GTM operating model and connecting Product with specialist Growth, Creative, Legal and Compliance teams.</p>
-        <ul class="role-focus">
-          <li>Product positioning, segmentation, messaging and GTM strategy</li>
-          <li>Global intake, prioritisation and launch operating models</li>
-          <li>Advanced trading, retail and emerging financial-product launches</li>
-          <li>Cross-functional Growth activation and scalable PMM workflows</li>
-        </ul>
-        <div class="role-links"><a href="/work/crypto-com-product-marketing-gtm/">Read the Crypto.com case study →</a></div>
-      </div>
+<p>Distribution in crypto is not simply the question of which marketing channels to buy. It is the entire route between a product existing and a customer repeatedly choosing it. That includes whether the customer understands the proposition, trusts the company, can access the product in their market, can fund an account easily, sees enough value to change an existing behaviour and receives the right reminder or incentive at the point when they are most likely to act. A technically superior product can lose to an inferior one if the second product solves those distribution problems more effectively.</p>
+
+<h2>Crypto makes distribution harder than it first appears</h2>
+<p>Many consumer products operate within relatively stable assumptions. A customer understands what a current account is, knows roughly why they might want a credit card and has familiar routes for moving money between financial institutions. Crypto products often ask much more of the user. The customer may need to understand a new asset, a different custody model, a network, a wallet, a yield mechanism or a trading instrument before they can even decide whether the proposition is relevant.</p>
+
+<p>That complexity becomes more significant when it meets regulation and geography. A campaign that is possible in one market may need to be rewritten, restricted or removed in another. A product available globally in theory may depend on local payment rails, identity checks, language, app-store availability or jurisdiction-specific product rules in practice. The result is that the addressable audience is not simply "everyone interested in crypto". The real audience is the subset of people who can understand the proposition, access it, fund it, trust it and use it within the rules of their market.</p>
+
+<div class="idea-callout"><p>Distribution is the system that turns product availability into customer behaviour.</p></div>
+
+<h2>Attention is not the same as adoption</h2>
+<p>Crypto can create attention very quickly. A token launch, market move, partnership or cultural moment can produce a surge of traffic and registrations that makes a product look as though it has solved distribution. The more difficult question is what happens after that attention arrives. If the customer does not understand the next action, encounters friction during funding, cannot see a reason to return or discovers that the product is not available in the form they expected, the initial spike tells you very little about durable growth.</p>
+
+<p>This is why I think product and growth teams need to look at distribution as a sequence rather than a campaign. The useful questions are not only how many people saw the launch or registered, but where the intended behaviour broke down. Did the proposition attract the right audience? Did they complete onboarding? Did they fund? Did they make the first meaningful transaction? Did the product create enough value to produce a second one? Each stage can have a different owner internally, but the customer experiences them as one journey.</p>
+
+<h2>The organisation can become part of the problem</h2>
+<p>Distribution also breaks when companies divide the customer journey too neatly between teams. Product owns the feature, Marketing owns the launch, Growth owns acquisition, CRM owns lifecycle, Operations owns payments and Compliance owns the rules. That structure can make sense organisationally, but it creates a risk that nobody owns the complete route from proposition to repeated behaviour.</p>
+
+<p>The strongest launches I have worked on tend to create a common understanding before channels begin executing. The team agrees who the product is for, what problem it solves, what behaviour matters, which constraints exist and how success will be measured. Specialist teams can then make better channel decisions because they are interpreting the same customer and commercial problem rather than receiving a late request for a blog, email or paid campaign.</p>
+
+<h2>What I would focus on</h2>
+<p>If I were looking at a crypto product struggling to grow, I would resist beginning with a new channel plan. I would first map the complete distribution system and identify where customer intent is being lost. In practice, that usually means looking at a small number of connected questions:</p>
+<ul>
+  <li>Is the target customer specific enough that the proposition can be meaningful?</li>
+  <li>Can that customer understand the value without first becoming an expert in the underlying technology?</li>
+  <li>Can they actually access, fund and use the product in their market?</li>
+  <li>What has to happen for an interested user to become an active customer?</li>
+  <li>What creates the second, third and tenth use rather than only the first?</li>
+  <li>Are Product, Growth, Operations and regulatory teams solving the same customer journey?</li>
+</ul>
+
+<p>None of those questions are particularly fashionable, which may be why they are easy to overlook. Crypto naturally rewards novelty, but distribution is often repetitive and operational. It means understanding customers, removing friction, localising correctly, choosing channels carefully, building lifecycle journeys and repeating the process until the behaviour becomes reliable.</p>
+
+<h2>The advantage is rarely one channel</h2>
+<p>I do not think there is a universal distribution playbook for crypto. The right system for an exchange, wallet, DeFi protocol or institutional product will be different, and the answer will change again by geography and customer segment. What is transferable is the discipline of treating distribution as part of the product's design rather than something that begins once the product is ready to announce.</p>
+
+<p>The companies that solve this well are not necessarily the ones with the loudest launch. They are the ones that make a complex product understandable, available and useful to a specific customer, then build enough trust and repeated value that using it becomes normal. In an industry where the technology can change very quickly, that may ultimately be the more durable advantage.</p>
+
     </article>
+  </div>
 
-    <article class="role-block" id="uphold">
-      <div class="role-meta">
-        <span class="date">2024 — 2025</span>
-        <span class="company">Uphold</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Consumer</h2>
-        <p>At Uphold, my work centred on consumer retention, commercial value and the relationship between customer behaviour and the broader product experience. I developed a more structured approach to high-value customer retention, helped build the VIP proposition and explored new commercial mechanisms for re-engaging customers who held meaningful assets but had become relatively passive.</p>
-        <ul class="role-focus">
-          <li>Consumer retention, lifecycle and customer-value strategy</li>
-          <li>VIP proposition and account-management operating model</li>
-          <li>Behavioural segmentation and churn-risk signals</li>
-          <li>Commercial proposition design for dormant asset holders</li>
-        </ul>
-        <div class="role-links"><a href="/work/uphold-retention-monetisation/">Read the Uphold case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="binance">
-      <div class="role-meta">
-        <span class="date">2020 — 2024</span>
-        <span class="company">Binance</span>
-      </div>
-      <div class="role-main">
-        <h2>Director, Integrated Marketing &amp; Campaigns</h2>
-        <p>My four years at Binance covered a period of rapid growth, international expansion and significant regulatory change. I worked across integrated marketing, operations and UK market execution, including product and campaign launches, customer communications, cross-functional operating models and the implementation required for the UK's cryptoasset Financial Promotions regime.</p>
-        <ul class="role-focus">
-          <li>Integrated marketing, GTM and multi-channel campaign strategy</li>
-          <li>UK market operations and cross-functional launch readiness</li>
-          <li>Regulatory GTM and Financial Promotions implementation</li>
-          <li>Product, Marketing, Operations, Legal and Compliance coordination</li>
-        </ul>
-        <div class="role-links"><a href="/work/binance-uk-financial-promotions/">Read the Binance UK case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="litecoin">
-      <div class="role-meta">
-        <span class="date">2018 — 2019</span>
-        <span class="company">Litecoin Foundation</span>
-      </div>
-      <div class="role-main">
-        <h2>Associate, Community Manager</h2>
-        <p>The Litecoin Foundation was where crypto became more than an interest for me. My role sat close to the community and education side of an emerging industry, helping communicate the technology to a global audience and supporting initiatives designed to increase awareness and adoption.</p>
-        <ul class="role-focus">
-          <li>Global community management and education</li>
-          <li>Content and ecosystem communications</li>
-          <li>Partnership activation, including helping bridge the UFC 232 opportunity</li>
-          <li>Early-stage crypto adoption and community growth</li>
-        </ul>
-        <div class="role-links"><a href="/work/litecoin-ufc-232/">Read the Litecoin x UFC 232 case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="endeavor-streaming">
-      <div class="role-meta">
-        <span class="date">2017 — 2019</span>
-        <span class="company">Endeavor Streaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Content Handling</h2>
-        <p>I worked in the London operation supporting live and on-demand streaming services across major sports and entertainment properties. The role gave me direct exposure to the operational side of premium digital media, including the wider Endeavor and UFC ecosystem, and became an important bridge between my earlier gaming background and the partnership work I later supported in crypto.</p>
-        <ul class="role-focus">
-          <li>Client operations across live and on-demand streaming products</li>
-          <li>Operational support for premium sports and entertainment platforms</li>
-          <li>Experience within the wider Endeavor ecosystem, including UFC-related services</li>
-          <li>Cross-functional issue resolution in a high-volume live-event environment</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="umg-media">
-      <div class="role-meta">
-        <span class="date">2016 — 2018</span>
-        <span class="company">UMG Media</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Customer Service</h2>
-        <p>My career began in gaming and esports, working directly with customers inside an industry that was still becoming professionalised. It gave me an early grounding in online communities, customer behaviour and operational problem-solving before I moved into crypto.</p>
-        <ul class="role-focus">
-          <li>High-volume customer support and community interaction</li>
-          <li>Dispute and process improvement</li>
-          <li>Gaming and esports customer experience</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="gamebattles">
-      <div class="role-meta">
-        <span class="date">2012 — 2014</span>
-        <span class="company">GameBattles / Major League Gaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Junior, Community Outreach</h2>
-        <p>This was my earliest professional experience in online communities and competitive gaming. GameBattles sat within the Major League Gaming ecosystem and gave me first-hand exposure to how large digital communities form around competition, identity and participation. MLG was later acquired by Activision Blizzard, with GameBattles continuing as part of the broader esports portfolio.</p>
-        <ul class="role-focus">
-          <li>Community outreach and engagement across competitive gaming audiences</li>
-          <li>Supporting online tournament communities and player communications</li>
-          <li>Early experience in esports, digital communities and audience behaviour</li>
-          <li>Remote collaboration within a fast-growing online gaming ecosystem</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <section class="experience-close shell">
-    <div class="label">More</div>
-    <div>
-      <p>The Work section goes deeper into selected projects, while LinkedIn has the conventional chronological version of my career. I use this page to show how the roles connect and where the focus of my work changed over time.</p>
-      <div class="links">
-        <a href="/work/">Selected work →</a>
-        <a href="https://www.linkedin.com/in/ilirlaro/" target="_blank" rel="noopener">LinkedIn →</a>
-      </div>
-    </div>
+  <section class="article-next shell">
+    <div class="small">Next idea</div>
+    <a href="/blog/prediction-markets/">
+      <h2>What product teams can learn from prediction markets</h2>
+      <span>Read →</span>
+    </a>
   </section>
 </main>
-
 <footer class="shell">
   <div class="footer-grid">
     <span>© 2026 Ilir Laro</span>

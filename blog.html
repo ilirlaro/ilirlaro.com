@@ -1,11 +1,14 @@
+---
+permalink: /blog/
+---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Experience | Ilir Laro</title>
-<meta name="description" content="Ilir Laro's experience across gaming, esports, Web3 and fintech, including GameBattles, Endeavor Streaming, Litecoin Foundation, Binance, Uphold and Crypto.com.">
-<link rel="canonical" href="https://ilirlaro.com/experience/">
+<title>Blog | Ilir Laro</title>
+<meta name="description" content="Writing from Ilir Laro on crypto, product, growth, markets, technology and building.">
+<link rel="canonical" href="https://ilirlaro.com/blog/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
 <style>
 :root{
@@ -40,7 +43,7 @@ button{font:inherit}
 .wordmark{font-size:14px;font-weight:800;letter-spacing:-.015em}
 .primary-nav{display:flex;gap:42px;font-size:14px;font-weight:500}
 .primary-nav a[aria-current="page"]{font-weight:700}
-.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:400;font-size:13px}
+.menu-toggle{display:none;background:none;border:0;padding:0;color:var(--ink);font-weight:650}
 .eyebrow{
   margin:0 0 18px;font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase
 }
@@ -219,7 +222,6 @@ footer{padding:62px 0 42px}
   }
   .primary-nav.open{display:flex}
   .menu-toggle{display:block}
-  .menu-toggle{font-size:13px;font-weight:400;line-height:1.2}
   .page-hero{padding:56px 0 58px}
   .page-hero h1{font-size:54px}
   .page-hero .lead,.case-deck{font-size:18px}
@@ -531,25 +533,25 @@ footer{padding:62px 0 42px}
 }
 
 
-/* Experience page */
-.experience-hero{
+/* Ideas landing page */
+.ideas-hero{
   padding:96px 0 78px;
 }
-.experience-hero-grid{
+.ideas-hero-grid{
   display:grid;
   grid-template-columns:190px minmax(0,1fr);
   gap:36px;
 }
-.experience-hero .eyebrow{margin-top:10px}
-.experience-hero h1{
+.ideas-hero .eyebrow{margin-top:10px}
+.ideas-hero h1{
   margin:0;
-  max-width:980px;
+  max-width:1000px;
   font-size:clamp(58px,7vw,100px);
   line-height:.95;
   letter-spacing:-.064em;
   font-weight:500;
 }
-.experience-hero .lead{
+.ideas-hero .lead{
   grid-column:2;
   margin:34px 0 0;
   max-width:790px;
@@ -559,297 +561,234 @@ footer{padding:62px 0 42px}
   letter-spacing:-.018em;
 }
 
-.path-strip{
+.ideas-intro{
   border-top:1px solid var(--line);
+  padding:38px 0 76px;
+  display:grid;
+  grid-template-columns:190px minmax(0,790px);
+  gap:36px;
+}
+.ideas-intro .label{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.ideas-intro p{
+  margin:0 0 23px;
+  font-size:17px;
+  line-height:1.76;
+  color:#2a2926;
+}
+
+.essay-list{
+  border-top:1px solid var(--line);
+  padding:34px 0 88px;
+}
+.essay-row{
+  display:grid;
+  grid-template-columns:72px 120px minmax(0,1fr) 80px;
+  gap:24px;
+  align-items:start;
+  padding:38px 0 42px;
   border-bottom:1px solid var(--line);
-  padding:28px 0;
+  transition:opacity .16s ease;
+}
+.essay-row:hover{opacity:.62}
+.essay-num,
+.essay-cat,
+.essay-time{
+  font-size:10px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.essay-title h2{
+  margin:0;
+  max-width:720px;
+  font-size:32px;
+  line-height:1.08;
+  letter-spacing:-.038em;
+  font-weight:550;
+}
+.essay-title p{
+  margin:14px 0 0;
+  max-width:670px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+.essay-time{text-align:right}
+
+.ideas-themes{
+  border-top:1px solid var(--line);
+  padding:36px 0 84px;
+}
+.ideas-themes-head{
   display:grid;
   grid-template-columns:190px 1fr;
   gap:36px;
+  margin-bottom:38px;
 }
-.path-strip .label{
+.ideas-themes-head .label{
   font-size:10px;
   font-weight:750;
   letter-spacing:.1em;
   text-transform:uppercase;
 }
-.path-flow{
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:13px;
-  font-size:16px;
-  font-weight:550;
-}
-.path-flow span:nth-child(even){color:var(--muted);font-weight:400}
-
-.role-list{
-  padding:34px 0 88px;
-}
-.role-block{
-  scroll-margin-top:30px;
-  display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
-  padding:52px 0 62px;
-  border-bottom:1px solid var(--line);
-}
-.role-block:last-child{border-bottom:0}
-.role-meta .date{
-  display:block;
-  font-size:10px;
-  font-weight:750;
-  letter-spacing:.09em;
-  text-transform:uppercase;
-  color:var(--muted);
-}
-.role-meta .company{
-  display:block;
-  margin-top:16px;
-  font-size:19px;
-  font-weight:650;
-}
-.role-main h2{
+.ideas-themes-head h2{
   margin:0;
-  font-size:35px;
-  line-height:1.08;
-  letter-spacing:-.04em;
-  font-weight:550;
+  max-width:720px;
+  font-size:clamp(36px,4vw,54px);
+  line-height:1.03;
+  letter-spacing:-.045em;
+  font-weight:500;
 }
-.role-main p{
-  margin:20px 0 0;
-  font-size:16px;
-  line-height:1.74;
-  color:#2a2926;
-}
-.role-focus{
-  margin:26px 0 0;
-  padding-left:18px;
-  font-size:13px;
-  line-height:1.62;
-  color:var(--muted);
-}
-.role-focus li{margin:7px 0}
-.role-links{
-  margin-top:28px;
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:12px;
-  font-weight:650;
-}
-.role-links a{text-decoration:underline;text-underline-offset:4px}
-
-.experience-close{
-  border-top:1px solid var(--line);
-  padding:36px 0 82px;
+.theme-grid{
   display:grid;
-  grid-template-columns:190px minmax(0,790px);
-  gap:36px;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  border:1px solid var(--line);
+  background:var(--line);
 }
-.experience-close .label{
+.theme-card{
+  min-height:230px;
+  padding:25px;
+  background:var(--bg);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.theme-card:nth-child(2){background:#e6e2d8}
+.theme-card:nth-child(3){background:var(--dark);color:var(--white)}
+.theme-card span{
   font-size:10px;
   font-weight:750;
-  letter-spacing:.1em;
-  text-transform:uppercase;
+  letter-spacing:.08em;
 }
-.experience-close p{
-  margin:0 0 22px;
-  font-size:17px;
-  line-height:1.74;
-  color:#2a2926;
+.theme-card h3{
+  margin:0;
+  font-size:25px;
+  line-height:1.06;
+  letter-spacing:-.035em;
+  font-weight:550;
 }
-.experience-close .links{
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-  font-size:13px;
-  font-weight:650;
+.theme-card p{
+  margin:12px 0 0;
+  font-size:12px;
+  line-height:1.55;
+  color:var(--muted);
 }
+.theme-card:nth-child(3) p{color:#aaa79f}
 
 @media(max-width:900px){
-  .experience-hero-grid,
-  .path-strip,
-  .role-block,
-  .experience-close{
+  .ideas-hero-grid,
+  .ideas-intro,
+  .ideas-themes-head{
     grid-template-columns:1fr;
     gap:22px;
   }
-  .experience-hero .lead{grid-column:1}
+  .ideas-hero .lead{grid-column:1}
+  .essay-row{grid-template-columns:52px 95px 1fr 55px}
+  .theme-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .experience-hero{padding:64px 0 56px}
-  .experience-hero h1{font-size:clamp(48px,14vw,72px)}
-  .experience-hero .lead{font-size:18px}
-  .role-block{padding:44px 0 52px}
-  .role-main h2{font-size:30px}
+  .ideas-hero{padding:64px 0 56px}
+  .ideas-hero h1{font-size:clamp(50px,14vw,74px)}
+  .ideas-hero .lead{font-size:18px}
+  .essay-row{
+    grid-template-columns:36px 1fr 48px;
+    gap:9px;
+    padding:26px 0 30px;
+  }
+  .essay-cat{display:none}
+  .essay-title h2{font-size:25px}
 }
 </style>
 </head>
 <body>
-<!-- build: experience-page -->
-
+<!-- build: ideas-page -->
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/">ILIR LARO</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a>
-      <a href="/blog/">Blog</a>
-      <a href="/experience/" aria-current="page">Experience</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/experience/">Experience</a>
       <a href="/advisory/">Advisory</a>
       <a href="/about/">About</a>
     </nav>
   </div>
 </header>
 
-
 <main>
-  <section class="experience-hero shell">
-    <div class="experience-hero-grid">
-      <p class="eyebrow">Experience</p>
-      <h1>A career across gaming, Web3 and fintech.</h1>
-      <p class="lead">My roles have moved across community, marketing, operations, retention, product marketing and go-to-market strategy as the problems I was working on became broader. This is the career view behind the individual case studies.</p>
+  <section class="ideas-hero shell">
+    <div class="ideas-hero-grid">
+      <p class="eyebrow">Blog</p>
+      <h1>Writing, observations and things I’m still working out.</h1>
+      <p class="lead">A place for ideas that sit around the edges of my day job: crypto distribution, product and growth, markets, technology, and the occasional question that has nothing to do with any of them.</p>
     </div>
   </section>
 
-  <section class="path-strip shell" aria-label="Career path">
-    <div class="label">Career path</div>
-    <div class="path-flow"><span>Gaming &amp; esports</span><span>→</span><span>Web3</span><span>→</span><span>Fintech</span></div>
-  </section>
-
-  <section class="role-list shell">
-    <article class="role-block" id="crypto-com">
-      <div class="role-meta">
-        <span class="date">2025 — Present</span>
-        <span class="company">Crypto.com</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Product Marketing</h2>
-        <p>I joined a rebuilt Product Marketing team as the organisation expanded across a broader portfolio of financial products. My work has focused on moving PMM earlier into the product lifecycle, creating a more structured global GTM operating model and connecting Product with specialist Growth, Creative, Legal and Compliance teams.</p>
-        <ul class="role-focus">
-          <li>Product positioning, segmentation, messaging and GTM strategy</li>
-          <li>Global intake, prioritisation and launch operating models</li>
-          <li>Advanced trading, retail and emerging financial-product launches</li>
-          <li>Cross-functional Growth activation and scalable PMM workflows</li>
-        </ul>
-        <div class="role-links"><a href="/work/crypto-com-product-marketing-gtm/">Read the Crypto.com case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="uphold">
-      <div class="role-meta">
-        <span class="date">2024 — 2025</span>
-        <span class="company">Uphold</span>
-      </div>
-      <div class="role-main">
-        <h2>VP, Consumer</h2>
-        <p>At Uphold, my work centred on consumer retention, commercial value and the relationship between customer behaviour and the broader product experience. I developed a more structured approach to high-value customer retention, helped build the VIP proposition and explored new commercial mechanisms for re-engaging customers who held meaningful assets but had become relatively passive.</p>
-        <ul class="role-focus">
-          <li>Consumer retention, lifecycle and customer-value strategy</li>
-          <li>VIP proposition and account-management operating model</li>
-          <li>Behavioural segmentation and churn-risk signals</li>
-          <li>Commercial proposition design for dormant asset holders</li>
-        </ul>
-        <div class="role-links"><a href="/work/uphold-retention-monetisation/">Read the Uphold case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="binance">
-      <div class="role-meta">
-        <span class="date">2020 — 2024</span>
-        <span class="company">Binance</span>
-      </div>
-      <div class="role-main">
-        <h2>Director, Integrated Marketing &amp; Campaigns</h2>
-        <p>My four years at Binance covered a period of rapid growth, international expansion and significant regulatory change. I worked across integrated marketing, operations and UK market execution, including product and campaign launches, customer communications, cross-functional operating models and the implementation required for the UK's cryptoasset Financial Promotions regime.</p>
-        <ul class="role-focus">
-          <li>Integrated marketing, GTM and multi-channel campaign strategy</li>
-          <li>UK market operations and cross-functional launch readiness</li>
-          <li>Regulatory GTM and Financial Promotions implementation</li>
-          <li>Product, Marketing, Operations, Legal and Compliance coordination</li>
-        </ul>
-        <div class="role-links"><a href="/work/binance-uk-financial-promotions/">Read the Binance UK case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="litecoin">
-      <div class="role-meta">
-        <span class="date">2018 — 2019</span>
-        <span class="company">Litecoin Foundation</span>
-      </div>
-      <div class="role-main">
-        <h2>Associate, Community Manager</h2>
-        <p>The Litecoin Foundation was where crypto became more than an interest for me. My role sat close to the community and education side of an emerging industry, helping communicate the technology to a global audience and supporting initiatives designed to increase awareness and adoption.</p>
-        <ul class="role-focus">
-          <li>Global community management and education</li>
-          <li>Content and ecosystem communications</li>
-          <li>Partnership activation, including helping bridge the UFC 232 opportunity</li>
-          <li>Early-stage crypto adoption and community growth</li>
-        </ul>
-        <div class="role-links"><a href="/work/litecoin-ufc-232/">Read the Litecoin x UFC 232 case study →</a></div>
-      </div>
-    </article>
-
-    <article class="role-block" id="endeavor-streaming">
-      <div class="role-meta">
-        <span class="date">2017 — 2019</span>
-        <span class="company">Endeavor Streaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Content Handling</h2>
-        <p>I worked in the London operation supporting live and on-demand streaming services across major sports and entertainment properties. The role gave me direct exposure to the operational side of premium digital media, including the wider Endeavor and UFC ecosystem, and became an important bridge between my earlier gaming background and the partnership work I later supported in crypto.</p>
-        <ul class="role-focus">
-          <li>Client operations across live and on-demand streaming products</li>
-          <li>Operational support for premium sports and entertainment platforms</li>
-          <li>Experience within the wider Endeavor ecosystem, including UFC-related services</li>
-          <li>Cross-functional issue resolution in a high-volume live-event environment</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="umg-media">
-      <div class="role-meta">
-        <span class="date">2016 — 2018</span>
-        <span class="company">UMG Media</span>
-      </div>
-      <div class="role-main">
-        <h2>Specialist, Customer Service</h2>
-        <p>My career began in gaming and esports, working directly with customers inside an industry that was still becoming professionalised. It gave me an early grounding in online communities, customer behaviour and operational problem-solving before I moved into crypto.</p>
-        <ul class="role-focus">
-          <li>High-volume customer support and community interaction</li>
-          <li>Dispute and process improvement</li>
-          <li>Gaming and esports customer experience</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="role-block" id="gamebattles">
-      <div class="role-meta">
-        <span class="date">2012 — 2014</span>
-        <span class="company">GameBattles / Major League Gaming</span>
-      </div>
-      <div class="role-main">
-        <h2>Junior, Community Outreach</h2>
-        <p>This was my earliest professional experience in online communities and competitive gaming. GameBattles sat within the Major League Gaming ecosystem and gave me first-hand exposure to how large digital communities form around competition, identity and participation. MLG was later acquired by Activision Blizzard, with GameBattles continuing as part of the broader esports portfolio.</p>
-        <ul class="role-focus">
-          <li>Community outreach and engagement across competitive gaming audiences</li>
-          <li>Supporting online tournament communities and player communications</li>
-          <li>Early experience in esports, digital communities and audience behaviour</li>
-          <li>Remote collaboration within a fast-growing online gaming ecosystem</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <section class="experience-close shell">
-    <div class="label">More</div>
+  <section class="ideas-intro shell">
+    <div class="label">Why write</div>
     <div>
-      <p>The Work section goes deeper into selected projects, while LinkedIn has the conventional chronological version of my career. I use this page to show how the roles connect and where the focus of my work changed over time.</p>
-      <div class="links">
-        <a href="/work/">Selected work →</a>
-        <a href="https://www.linkedin.com/in/ilirlaro/" target="_blank" rel="noopener">LinkedIn →</a>
+      <p>Most of my professional writing has historically been created for a company, a launch or a specific business objective. I wanted somewhere to think in public without every idea needing to become a presentation, campaign or internal document. Some of these pieces come directly from problems I have worked on; others are simply subjects I keep returning to and want to understand more clearly.</p>
+      <p>I do not expect every view here to remain unchanged. Part of the point is to write down how I see something today, expose the assumptions underneath it and leave enough room to change my mind when better information appears.</p>
+    </div>
+  </section>
+
+  <section class="essay-list shell" aria-label="Latest ideas">
+    <a class="essay-row" href="/blog/crypto-distribution/">
+      <span class="essay-num">01</span>
+      <span class="essay-cat">Crypto</span>
+      <div class="essay-title">
+        <h2>Why crypto products still have a distribution problem</h2>
+        <p>Great technology does not remove the need to earn attention, trust and repeated customer behaviour. In crypto, distribution is often the harder product problem.</p>
       </div>
+      <span class="essay-time">6 min</span>
+    </a>
+
+    <a class="essay-row" href="/blog/prediction-markets/">
+      <span class="essay-num">02</span>
+      <span class="essay-cat">Product</span>
+      <div class="essay-title">
+        <h2>What product teams can learn from prediction markets</h2>
+        <p>Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.</p>
+      </div>
+      <span class="essay-time">5 min</span>
+    </a>
+
+    <a class="essay-row" href="/blog/building-my-own-corner-of-the-internet/">
+      <span class="essay-num">03</span>
+      <span class="essay-cat">Personal</span>
+      <div class="essay-title">
+        <h2>Building my own corner of the internet</h2>
+        <p>Why I wanted somewhere that could accumulate as my own body of work rather than disappearing into the companies, platforms and feeds I happen to use.</p>
+      </div>
+      <span class="essay-time">4 min</span>
+    </a>
+  </section>
+
+  <section class="ideas-themes shell">
+    <div class="ideas-themes-head">
+      <div class="label">Themes</div>
+      <h2>The subjects I expect to keep returning to.</h2>
+    </div>
+    <div class="theme-grid">
+      <article class="theme-card">
+        <span>01</span>
+        <div><h3>Crypto, markets &amp; distribution</h3><p>How products reach customers, how behaviour changes and where technology meets incentives and trust.</p></div>
+      </article>
+      <article class="theme-card">
+        <span>02</span>
+        <div><h3>Product, growth &amp; organisations</h3><p>What happens between an idea, a customer proposition and the operating system required to scale it.</p></div>
+      </article>
+      <article class="theme-card">
+        <span>03</span>
+        <div><h3>Things outside work</h3><p>Technology, philosophy, creativity, time and whatever else I am thinking about enough to write down.</p></div>
+      </article>
     </div>
   </section>
 </main>
