@@ -503,7 +503,7 @@ a.press-logo:focus-visible {
   .hero { gap: 34px; }
   .hero h1 { font-size: 54px; }
   .hero-lead { font-size: 17px; }
-  .hero-actions { align-items: flex-start; gap: 20px; flex-direction: column; }
+  .hero-actions { align-items: center; gap: 16px; flex-direction: row; flex-wrap: nowrap; }
   .hero-media figcaption { height: 42px; padding-inline: 14px; font-size: 8px; }
 
   .section-space { margin-top: 58px; }
@@ -742,6 +742,28 @@ a.press-logo:focus-visible {
 }
 /* === END CANONICAL HEADER / NAV === */
 
+
+/* mobile hero CTA row */
+@media (max-width:620px){
+  .hero-actions{
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    gap:16px!important;
+    flex-wrap:nowrap!important;
+  }
+  .hero-actions .button{
+    min-height:44px!important;
+    padding:0 18px!important;
+    font-size:13px!important;
+    white-space:nowrap!important;
+  }
+  .hero-actions .text-link{
+    font-size:13px!important;
+    white-space:nowrap!important;
+  }
+}
+
 </style>
   <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -885,28 +907,28 @@ document.addEventListener('DOMContentLoaded', () => {
       <h2 class="section-heading compact" id="career-title">Career</h2>
       <div class="career-list" role="list">
         <a class="career-row" role="listitem" href="/experience/#crypto-com" aria-label="Read more about my experience at Crypto.com">
-          <span class="career-date">2025 — PRESENT</span>
+          <span class="career-date">2025 - PRESENT</span>
           <img class="career-logo crypto" src="/crypto-com-icon.png" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Crypto.com</span>
           <span class="career-role">VP, Product Marketing</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
         <a class="career-row" role="listitem" href="/experience/#uphold" aria-label="Read more about my experience at Uphold">
-          <span class="career-date">2024 — 2025</span>
+          <span class="career-date">2024 - 2025</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/uphold.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Uphold</span>
           <span class="career-role">VP, Consumer</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
         <a class="career-row" role="listitem" href="/experience/#binance" aria-label="Read more about my experience at Binance">
-          <span class="career-date">2020 — 2024</span>
+          <span class="career-date">2020 - 2024</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/binance.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Binance</span>
           <span class="career-role">Director, Integrated Marketing &amp; Campaigns</span>
           <span class="career-arrow" aria-hidden="true">→</span>
         </a>
         <a class="career-row" role="listitem" href="/experience/#litecoin" aria-label="Read more about my experience at Litecoin Foundation">
-          <span class="career-date">2018 — 2019</span>
+          <span class="career-date">2018 - 2019</span>
           <img class="career-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@16.28.0/icons/litecoin.svg" alt="" aria-hidden="true" draggable="false">
           <span class="career-company">Litecoin Foundation</span>
           <span class="career-role">Associate, Community Manager</span>
