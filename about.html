@@ -384,7 +384,7 @@ footer{padding:62px 0 42px}
 .journey-flow{
   margin-top:28px;
   display:grid;
-  grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;
+  grid-template-columns:1fr 22px 1fr 22px 1fr 22px 1fr 22px 1fr;
   align-items:center;
 }
 .journey-step{
@@ -545,6 +545,25 @@ footer{padding:62px 0 42px}
   .interests-grid{grid-template-columns:1fr}
   .about-cta{padding:40px 28px}
 }
+/* final unified mobile header */
+
+@media (max-width:900px){
+  .site-header{padding-top:25px!important}
+  .header-inner{height:48px!important;min-height:0!important;align-items:flex-start!important}
+  .menu-toggle{
+    display:inline-flex!important;
+    border:0!important;
+    background:transparent!important;
+    color:var(--ink)!important;
+    padding:0!important;
+    margin:0!important;
+    font-size:13px!important;
+    font-weight:400!important;
+    line-height:1.2!important;
+    cursor:pointer!important
+  }
+}
+
 </style>
 </head>
 <body>
@@ -569,61 +588,63 @@ footer{padding:62px 0 42px}
   <section class="about-hero shell">
     <div class="about-hero-grid">
       <p class="eyebrow">About</p>
-      <h1>I didn’t grow up with a plan for any of this.</h1>
+      <h1>How I work across products, markets and growth</h1>
       <p class="lead">My career has moved from gaming and esports into crypto and financial technology, but the more consistent story has been learning, building, trying to understand people and gradually discovering what I am capable of.</p>
     </div>
   </section>
 
   <section class="profile-band shell" aria-label="About at a glance">
     <div><span>Raised in</span><strong>London, UK</strong></div>
-    <div><span>Career path</span><strong>Gaming → Web3 → Fintech</strong></div>
-    <div><span>Outside work</span><strong>Family, film, music, philosophy and physics</strong></div>
+    <div><span>Career development path</span><strong>Gaming → Web3 → Fintech</strong></div>
+    <div><span>Outside work</span><strong>Film, music, philosophy, physics and entrepreneurship</strong></div>
   </section>
 
   <div class="about-story shell">
     <aside class="about-index">
       <div class="label">The story</div>
       <nav>
-        <a href="#beginning">Where it started</a>
-        <a href="#career">Career</a>
-        <a href="#motivation">Motivation</a>
-        <a href="#curiosity">Curiosity</a>
-        <a href="#creative">Film &amp; music</a>
-        <a href="#building">Building</a>
-        <a href="#time">Time &amp; family</a>
+        <a href="#beginning">Career development path</a>
+        <a href="#career">Career development</a>
+        <a href="#motivation">Operating approach</a>
+        <a href="#curiosity">How I think</a>
+        <a href="#creative">Outside work</a>
+        <a href="#building">Entrepreneurship</a>
+        <a href="#time">Perspective</a>
       </nav>
     </aside>
 
     <article class="about-copy-main">
-      <h2 id="beginning">Where it started</h2>
-      <p>My family came to London when I was one. I was born in Albania, but London is where I grew up and where almost all of my memories begin. My parents had not been to university and did not come from corporate or business backgrounds, so there was no obvious blueprint for the kind of career I eventually built. What they gave me instead was a straightforward set of values: work hard, stay grounded, be sensible with money, look after the people around you and build things gradually rather than expecting success to arrive quickly.</p>
+      <h2 id="beginning">Career development path</h2>
+      <p>I’ve built my career across gaming, Web3 and fintech, usually in roles that sit between product, marketing, operations and growth. The common thread has been working in fast-moving categories where the product, market and operating model are still evolving, and where progress depends on turning ambiguity into a clear plan that different teams can execute.</p>
 
       <p>I did not grow up thinking of myself as particularly gifted or destined for an unusual career. For quite a long time, I thought I was fairly average academically, and much of my confidence developed later as I discovered subjects I was good at and realised that ability could be improved deliberately. Mathematics was one of the first areas where that happened. Once I understood something properly, I found that I enjoyed helping other people understand it too, and I became interested not only in learning but in the moment when something finally makes sense to somebody else.</p>
 
       <p>Looking back, that period probably shaped more of my personality than I realised. I became comfortable with the idea that you do not need to start as the most talented person in the room, but you do need enough curiosity and persistence to keep improving. It also made me sensitive to people being underestimated, because I know how different somebody can become once they gain confidence, context and the opportunity to develop.</p>
 
       <h2 id="career">My career started somewhere completely different</h2>
-      <p>My first professional world was gaming and esports. I had grown up around games and internet culture, and I was fascinated by the fact that an industry was forming around something that had previously felt like a hobby. It was my first experience of working inside a category while it was still taking shape, before the companies, roles and conventions had become completely established, and I found that environment much more interesting than following a conventional career path.</p>
+      <p>My career started in gaming and esports, where I learned what it was like to work inside a category that was still forming. Roles, operating models and commercial conventions were evolving quickly, which rewarded people who could learn fast, work across functions and stay comfortable with ambiguity. That environment shaped the way I still approach new markets and complex products.</p>
 
-      <p>Crypto had a similar quality when I discovered it. It combined technology, financial markets, online communities and new ideas about ownership and money in a way that felt genuinely different. I became involved with the Litecoin Foundation, initially through community and education work, and what began as an interest gradually became a serious career. That career eventually took me through Binance, Uphold and Crypto.com, with my responsibilities expanding from community and marketing into operations, growth, retention, product marketing and go-to-market strategy.</p>
+      <p>I moved into crypto through the Litecoin Foundation, initially in community and education, before taking on progressively broader commercial and operational responsibilities at Binance, Uphold and Crypto.com. Across those roles, my remit expanded into growth, retention, operations, product marketing and go-to-market strategy, with an increasing focus on how product, customer, regulatory and commercial decisions fit together.</p>
 
-      <div class="journey-strip" aria-label="Career journey">
-        <div class="small">Career journey</div>
+      <div class="journey-strip" aria-label="Career development journey">
+        <div class="small">Career development journey</div>
         <div class="journey-flow">
           <div class="journey-step"><b>Gaming &amp; esports</b><span>Internet culture, communities and an emerging industry</span></div>
           <div class="journey-arrow">→</div>
           <div class="journey-step"><b>Litecoin Foundation</b><span>Crypto, community and education</span></div>
           <div class="journey-arrow">→</div>
-          <div class="journey-step"><b>Binance &amp; Uphold</b><span>Growth, operations, retention and financial products</span></div>
+          <div class="journey-step"><b>Binance</b><span>Operations, growth, regulation and market execution</span></div>
+          <div class="journey-arrow">→</div>
+          <div class="journey-step"><b>Uphold</b><span>Consumer growth, retention and monetisation</span></div>
           <div class="journey-arrow">→</div>
           <div class="journey-step"><b>Crypto.com</b><span>Product marketing, GTM and cross-functional strategy</span></div>
         </div>
       </div>
 
-      <p>I never made a conscious decision to become broad across so many disciplines. It happened because I tended to follow the problem rather than the boundaries of my job description. If solving something required understanding Product, I learned more about Product. If it required regulation, customer behaviour, operations or commercial strategy, I went deeper into those areas too. Over time, that became one of the defining characteristics of how I work: I like understanding enough of the whole system to see how the different pieces connect and where something is preventing progress.</p>
+      <p>My breadth across disciplines developed because the problems I worked on rarely fitted inside one function. A successful launch might require Product, Legal, Compliance, Operations, Marketing and regional teams to move together, so I learned to understand enough of each area to connect decisions, resolve dependencies and keep execution moving. That cross-functional operating style is now one of the defining characteristics of how I work.</p>
 
-      <h2 id="motivation">My motivation has changed as I have</h2>
-      <p>Earlier in my life, a lot of my motivation came from wanting to prove to myself that I was capable of more. Education mattered partly because it changed how I saw myself, and career progression did something similar. Each new responsibility gave me evidence that the limits I had assumed when I was younger were not necessarily real, and that created a strong drive to keep improving, learning and taking on bigger problems.</p>
+      <h2 id="motivation">What motivates my work now</h2>
+      <p>What motivates me now is the opportunity to work on meaningful commercial problems where strategy has to become execution. I enjoy environments where the answer is not obvious, where teams need alignment, and where progress depends on combining customer insight, product judgment, operational discipline and commercial thinking.</p>
 
       <p>I still have that ambition. I want to build businesses, create wealth and eventually reach a level of financial independence where I have far greater control over how I spend my time. What has changed is that achievement by itself has become less interesting. I increasingly care about whether what I am doing is useful, whether I am creating something I genuinely believe in and whether the people around me are progressing as well.</p>
 
@@ -668,7 +689,7 @@ footer{padding:62px 0 42px}
   <section class="interests shell" aria-labelledby="interests-title">
     <div class="interests-head">
       <div class="label">Current interests</div>
-      <h2 id="interests-title">The things I keep coming back to.</h2>
+      <h2 id="interests-title">Interests that shape how I think.</h2>
     </div>
     <div class="interests-grid">
       <article class="interest-card">
@@ -681,11 +702,11 @@ footer{padding:62px 0 42px}
       </article>
       <article class="interest-card">
         <span class="num">03</span>
-        <div><h3>Film &amp; music</h3><p>Storytelling, cinematic scores and creative work that changes how something feels.</p></div>
+        <div><h3>Outside work</h3><p>Storytelling, cinematic scores and creative work that changes how something feels.</p></div>
       </article>
       <article class="interest-card">
         <span class="num">04</span>
-        <div><h3>Building</h3><p>Entrepreneurship, independence, writing and turning ideas into things that actually exist.</p></div>
+        <div><h3>Entrepreneurship</h3><p>Entrepreneurship, independence, writing and turning ideas into things that actually exist.</p></div>
       </article>
     </div>
   </section>
