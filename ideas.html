@@ -1,14 +1,14 @@
 ---
-permalink: /about/
+permalink: /ideas/
 ---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About | Ilir Laro</title>
-<meta name="description" content="About Ilir Laro: a career from gaming and esports into crypto and financial technology, shaped by curiosity, family, building and a desire to keep learning.">
-<link rel="canonical" href="https://ilirlaro.com/about/">
+<title>Ideas | Ilir Laro</title>
+<meta name="description" content="Writing and observations from Ilir Laro on crypto, product, growth, markets, technology and building.">
+<link rel="canonical" href="https://ilirlaro.com/ideas/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMTExMTBmIi8+Cjx0ZXh0IHg9IjMyIiB5PSI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiCmZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmNWYzZWUiPklMPC90ZXh0Pgo8L3N2Zz4=">
 <style>
 :root{
@@ -532,156 +532,263 @@ footer{padding:62px 0 42px}
   .interests-grid{grid-template-columns:1fr}
   .about-cta{padding:40px 28px}
 }
+
+
+/* Ideas landing page */
+.ideas-hero{
+  padding:96px 0 78px;
+}
+.ideas-hero-grid{
+  display:grid;
+  grid-template-columns:190px minmax(0,1fr);
+  gap:36px;
+}
+.ideas-hero .eyebrow{margin-top:10px}
+.ideas-hero h1{
+  margin:0;
+  max-width:1000px;
+  font-size:clamp(58px,7vw,100px);
+  line-height:.95;
+  letter-spacing:-.064em;
+  font-weight:500;
+}
+.ideas-hero .lead{
+  grid-column:2;
+  margin:34px 0 0;
+  max-width:790px;
+  color:var(--muted);
+  font-size:21px;
+  line-height:1.55;
+  letter-spacing:-.018em;
+}
+
+.ideas-intro{
+  border-top:1px solid var(--line);
+  padding:38px 0 76px;
+  display:grid;
+  grid-template-columns:190px minmax(0,790px);
+  gap:36px;
+}
+.ideas-intro .label{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.ideas-intro p{
+  margin:0 0 23px;
+  font-size:17px;
+  line-height:1.76;
+  color:#2a2926;
+}
+
+.essay-list{
+  border-top:1px solid var(--line);
+  padding:34px 0 88px;
+}
+.essay-row{
+  display:grid;
+  grid-template-columns:72px 120px minmax(0,1fr) 80px;
+  gap:24px;
+  align-items:start;
+  padding:38px 0 42px;
+  border-bottom:1px solid var(--line);
+  transition:opacity .16s ease;
+}
+.essay-row:hover{opacity:.62}
+.essay-num,
+.essay-cat,
+.essay-time{
+  font-size:10px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.essay-title h2{
+  margin:0;
+  max-width:720px;
+  font-size:32px;
+  line-height:1.08;
+  letter-spacing:-.038em;
+  font-weight:550;
+}
+.essay-title p{
+  margin:14px 0 0;
+  max-width:670px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+.essay-time{text-align:right}
+
+.ideas-themes{
+  border-top:1px solid var(--line);
+  padding:36px 0 84px;
+}
+.ideas-themes-head{
+  display:grid;
+  grid-template-columns:190px 1fr;
+  gap:36px;
+  margin-bottom:38px;
+}
+.ideas-themes-head .label{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.ideas-themes-head h2{
+  margin:0;
+  max-width:720px;
+  font-size:clamp(36px,4vw,54px);
+  line-height:1.03;
+  letter-spacing:-.045em;
+  font-weight:500;
+}
+.theme-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+.theme-card{
+  min-height:230px;
+  padding:25px;
+  background:var(--bg);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.theme-card:nth-child(2){background:#e6e2d8}
+.theme-card:nth-child(3){background:var(--dark);color:var(--white)}
+.theme-card span{
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.08em;
+}
+.theme-card h3{
+  margin:0;
+  font-size:25px;
+  line-height:1.06;
+  letter-spacing:-.035em;
+  font-weight:550;
+}
+.theme-card p{
+  margin:12px 0 0;
+  font-size:12px;
+  line-height:1.55;
+  color:var(--muted);
+}
+.theme-card:nth-child(3) p{color:#aaa79f}
+
+@media(max-width:900px){
+  .ideas-hero-grid,
+  .ideas-intro,
+  .ideas-themes-head{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+  .ideas-hero .lead{grid-column:1}
+  .essay-row{grid-template-columns:52px 95px 1fr 55px}
+  .theme-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .ideas-hero{padding:64px 0 56px}
+  .ideas-hero h1{font-size:clamp(50px,14vw,74px)}
+  .ideas-hero .lead{font-size:18px}
+  .essay-row{
+    grid-template-columns:36px 1fr 48px;
+    gap:9px;
+    padding:26px 0 30px;
+  }
+  .essay-cat{display:none}
+  .essay-title h2{font-size:25px}
+}
 </style>
 </head>
 <body>
-<!-- build: about-page -->
-
+<!-- build: ideas-page -->
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/">ILIR LARO</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="/work/">Work</a>
-      <a href="/#ideas">Ideas</a>
-      <a href="/#advisory">Advisory</a>
-      <a href="/about/" aria-current="page">About</a>
+      <a href="/ideas/" aria-current="page">Ideas</a>
+      <a href="/advisory/">Advisory</a>
+      <a href="/about/">About</a>
     </nav>
   </div>
 </header>
 
-
 <main>
-  <section class="about-hero shell">
-    <div class="about-hero-grid">
-      <p class="eyebrow">About</p>
-      <h1>I didn’t grow up with a plan for any of this.</h1>
-      <p class="lead">My career has moved from gaming and esports into crypto and financial technology, but the more consistent story has been learning, building, trying to understand people and gradually discovering what I am capable of.</p>
+  <section class="ideas-hero shell">
+    <div class="ideas-hero-grid">
+      <p class="eyebrow">Ideas</p>
+      <h1>Writing, observations and things I’m still working out.</h1>
+      <p class="lead">A place for ideas that sit around the edges of my day job: crypto distribution, product and growth, markets, technology, and the occasional question that has nothing to do with any of them.</p>
     </div>
   </section>
 
-  <section class="profile-band shell" aria-label="About at a glance">
-    <div><span>Raised in</span><strong>London, UK</strong></div>
-    <div><span>Career path</span><strong>Gaming → Web3 → Fintech</strong></div>
-    <div><span>Outside work</span><strong>Family, film, music, philosophy and physics</strong></div>
+  <section class="ideas-intro shell">
+    <div class="label">Why write</div>
+    <div>
+      <p>Most of my professional writing has historically been created for a company, a launch or a specific business objective. I wanted somewhere to think in public without every idea needing to become a presentation, campaign or internal document. Some of these pieces come directly from problems I have worked on; others are simply subjects I keep returning to and want to understand more clearly.</p>
+      <p>I do not expect every view here to remain unchanged. Part of the point is to write down how I see something today, expose the assumptions underneath it and leave enough room to change my mind when better information appears.</p>
+    </div>
   </section>
 
-  <div class="about-story shell">
-    <aside class="about-index">
-      <div class="label">The story</div>
-      <nav>
-        <a href="#beginning">Where it started</a>
-        <a href="#career">Career</a>
-        <a href="#motivation">Motivation</a>
-        <a href="#curiosity">Curiosity</a>
-        <a href="#creative">Film &amp; music</a>
-        <a href="#building">Building</a>
-        <a href="#time">Time &amp; family</a>
-      </nav>
-    </aside>
-
-    <article class="about-copy-main">
-      <h2 id="beginning">Where it started</h2>
-      <p>My family came to London when I was one. I was born in Albania, but London is where I grew up and where almost all of my memories begin. My parents had not been to university and did not come from corporate or business backgrounds, so there was no obvious blueprint for the kind of career I eventually built. What they gave me instead was a straightforward set of values: work hard, stay grounded, be sensible with money, look after the people around you and build things gradually rather than expecting success to arrive quickly.</p>
-
-      <p>I did not grow up thinking of myself as particularly gifted or destined for an unusual career. For quite a long time, I thought I was fairly average academically, and much of my confidence developed later as I discovered subjects I was good at and realised that ability could be improved deliberately. Mathematics was one of the first areas where that happened. Once I understood something properly, I found that I enjoyed helping other people understand it too, and I became interested not only in learning but in the moment when something finally makes sense to somebody else.</p>
-
-      <p>Looking back, that period probably shaped more of my personality than I realised. I became comfortable with the idea that you do not need to start as the most talented person in the room, but you do need enough curiosity and persistence to keep improving. It also made me sensitive to people being underestimated, because I know how different somebody can become once they gain confidence, context and the opportunity to develop.</p>
-
-      <h2 id="career">My career started somewhere completely different</h2>
-      <p>My first professional world was gaming and esports. I had grown up around games and internet culture, and I was fascinated by the fact that an industry was forming around something that had previously felt like a hobby. It was my first experience of working inside a category while it was still taking shape, before the companies, roles and conventions had become completely established, and I found that environment much more interesting than following a conventional career path.</p>
-
-      <p>Crypto had a similar quality when I discovered it. It combined technology, financial markets, online communities and new ideas about ownership and money in a way that felt genuinely different. I became involved with the Litecoin Foundation, initially through community and education work, and what began as an interest gradually became a serious career. That career eventually took me through Binance, Uphold and Crypto.com, with my responsibilities expanding from community and marketing into operations, growth, retention, product marketing and go-to-market strategy.</p>
-
-      <div class="journey-strip" aria-label="Career journey">
-        <div class="small">Career journey</div>
-        <div class="journey-flow">
-          <div class="journey-step"><b>Gaming &amp; esports</b><span>Internet culture, communities and an emerging industry</span></div>
-          <div class="journey-arrow">→</div>
-          <div class="journey-step"><b>Litecoin Foundation</b><span>Crypto, community and education</span></div>
-          <div class="journey-arrow">→</div>
-          <div class="journey-step"><b>Binance &amp; Uphold</b><span>Growth, operations, retention and financial products</span></div>
-          <div class="journey-arrow">→</div>
-          <div class="journey-step"><b>Crypto.com</b><span>Product marketing, GTM and cross-functional strategy</span></div>
-        </div>
+  <section class="essay-list shell" aria-label="Latest ideas">
+    <a class="essay-row" href="/ideas/crypto-distribution/">
+      <span class="essay-num">01</span>
+      <span class="essay-cat">Crypto</span>
+      <div class="essay-title">
+        <h2>Why crypto products still have a distribution problem</h2>
+        <p>Great technology does not remove the need to earn attention, trust and repeated customer behaviour. In crypto, distribution is often the harder product problem.</p>
       </div>
+      <span class="essay-time">6 min</span>
+    </a>
 
-      <p>I never made a conscious decision to become broad across so many disciplines. It happened because I tended to follow the problem rather than the boundaries of my job description. If solving something required understanding Product, I learned more about Product. If it required regulation, customer behaviour, operations or commercial strategy, I went deeper into those areas too. Over time, that became one of the defining characteristics of how I work: I like understanding enough of the whole system to see how the different pieces connect and where something is preventing progress.</p>
-
-      <h2 id="motivation">My motivation has changed as I have</h2>
-      <p>Earlier in my life, a lot of my motivation came from wanting to prove to myself that I was capable of more. Education mattered partly because it changed how I saw myself, and career progression did something similar. Each new responsibility gave me evidence that the limits I had assumed when I was younger were not necessarily real, and that created a strong drive to keep improving, learning and taking on bigger problems.</p>
-
-      <p>I still have that ambition. I want to build businesses, create wealth and eventually reach a level of financial independence where I have far greater control over how I spend my time. What has changed is that achievement by itself has become less interesting. I increasingly care about whether what I am doing is useful, whether I am creating something I genuinely believe in and whether the people around me are progressing as well.</p>
-
-      <p>Helping somebody else understand something or become more confident gives me a disproportionate amount of satisfaction. I notice quite quickly when someone feels dismissed, uncomfortable or undervalued, and I find it difficult to treat that as irrelevant. I think part of that comes from remembering what it feels like not to see yourself as particularly exceptional. It has left me with a strong belief that people's current circumstances, titles or confidence levels often tell you very little about what they might eventually be capable of.</p>
-
-      <div class="editorial-break">
-        <p>The older I get, the less interested I am in proving that I belong somewhere and the more interested I am in building things that are useful, meaningful and genuinely mine.</p>
+    <a class="essay-row" href="/ideas/prediction-markets/">
+      <span class="essay-num">02</span>
+      <span class="essay-cat">Product</span>
+      <div class="essay-title">
+        <h2>What product teams can learn from prediction markets</h2>
+        <p>Prediction markets make uncertainty, incentives and feedback unusually visible. That makes them useful to think about even when you are building something completely different.</p>
       </div>
+      <span class="essay-time">5 min</span>
+    </a>
 
-      <h2 id="curiosity">I am curious about things that have no obvious practical use</h2>
-      <p>Outside work, I am naturally quite introverted and spend a lot of time thinking, reading or disappearing down subjects simply because I find them interesting. Philosophy is one of those areas, particularly epistemology and questions around how we know what we think we know. I find it fascinating that two intelligent people can look at the same event, have access to similar information and still reach completely different conclusions because they are starting from different assumptions or experiences.</p>
-
-      <p>Physics interests me for a similar reason, especially space, time and the parts of reality that become increasingly difficult to understand through ordinary human intuition. The scale of the universe, the nature of time and the fact that our everyday experience represents such a small part of what exists are subjects I can spend hours thinking about without needing them to lead anywhere useful. I like ideas that make the world feel less obvious than it did before I encountered them.</p>
-
-      <p>Financial markets and technology probably appeal to the same part of my personality. They combine mathematics with psychology, incentives, narratives and human behaviour. A market can be technically sophisticated and still be moved by fear, confidence, social dynamics and collective belief, which makes it much more interesting to me than viewing finance purely as a set of numbers.</p>
-
-      <h2 id="creative">Film and music have always been another way I process the world</h2>
-      <p>I have loved films for as long as I can remember. When I was younger, I wanted to become an actor and spent a lot of time making videos with basic editing software, long before I had any idea what I wanted to do professionally. I do not think I was consciously trying to become a filmmaker. I simply liked creating something and seeing whether it could make somebody laugh, feel emotional or look at something differently.</p>
-
-      <p>That interest never disappeared. Films such as <em>Interstellar</em>, <em>Dune</em> and <em>Rocky</em> resonate with me for different reasons, but there is a common thread in the stories I tend to remember. I am drawn to people facing something larger than themselves, to questions about time and sacrifice, and to characters who are forced to discover what they are capable of through adversity. I like films that have an idea underneath the story rather than simply entertaining you for two hours.</p>
-
-      <p>Music has a similar effect on me, particularly film scores. I listen to a lot of Hans Zimmer and other cinematic music, often while thinking, working or imagining things I might want to create in the future. I can become completely absorbed in a piece of music and start visualising stories, moments or possibilities around it. That tendency to daydream is probably one of the reasons I have always generated more ideas than I could realistically pursue.</p>
-
-      <h2 id="building">I want to spend more of my life building things that are mine</h2>
-      <p>Entrepreneurship has interested me for years, although I have historically been better at generating ideas than acting on all of them. Part of that is analytical. I can see the risks and uncertainties quickly, which can make it easy to keep refining an idea rather than exposing it to reality. As I get older, I want to become more comfortable with that uncertainty and spend more time actually building.</p>
-
-      <p>Financial independence is part of that ambition, but it is not the whole thing. What I really want is optionality: the ability to choose what I work on, support the people around me, explore ideas that may not have an obvious corporate sponsor and create things because I think they should exist. I would like to write more, build products and businesses, explore creative work and eventually find ways of teaching or sharing what I have learned with other people.</p>
-
-      <p>This website is a small part of that transition. Most of what I have built professionally has belonged to the companies I worked for, which is completely normal, but I wanted somewhere that could accumulate over time as my own body of work. It gives me a place to document projects, develop ideas properly and begin putting some of the things I have spent years thinking about into the world.</p>
-
-      <h2 id="time">The older I get, the more I think about time</h2>
-      <p>Family is a very important part of my life. I spend a lot of time with my wife and the people closest to me, and as I have become older I have started noticing how quickly the structure of a family changes. You begin life dependent on your parents, gradually become independent, build a life of your own and eventually find yourself watching the people who once looked after you grow older.</p>
-
-      <p>There is something strange about how slowly those changes happen while you are living through them and how obvious they become when you look backwards. The roles within a family gradually change hands, one stage of life becomes another, and much of what once felt permanent turns out to have been temporary. My interest in time, cycles and the different stages of life is probably not separate from my interest in physics or film. It is another version of the same question about how we experience the limited amount of time we have.</p>
-
-      <p>That has changed my definition of success. I still care about ambition, achievement and financial security, but I do not want to spend an entire life collecting professional milestones and realise too late that they were only one part of it. I want enough independence to build interesting things, enough curiosity to keep learning, enough time to be present with the people I care about and enough perspective to remember that status is temporary.</p>
-
-      <p>I have met people at every level of organisations who have taught me something, and I have never been particularly comfortable assuming that someone's job title tells you their value. People carry experiences, abilities and stories that are rarely visible at first. The more of life I experience myself, the more interested I become in understanding how people arrived where they are, what shaped them and what they might still become. That is probably the most consistent thread through everything I have done so far: learning, building, trying to understand people and gradually discovering what is possible.</p>
-    </article>
-  </div>
-
-  <section class="interests shell" aria-labelledby="interests-title">
-    <div class="interests-head">
-      <div class="label">Current interests</div>
-      <h2 id="interests-title">The things I keep coming back to.</h2>
-    </div>
-    <div class="interests-grid">
-      <article class="interest-card">
-        <span class="num">01</span>
-        <div><h3>Markets &amp; technology</h3><p>Financial systems, incentives, emerging products and how behaviour changes around them.</p></div>
-      </article>
-      <article class="interest-card">
-        <span class="num">02</span>
-        <div><h3>Philosophy &amp; physics</h3><p>Epistemology, perspective, space, time and questions that make reality less obvious.</p></div>
-      </article>
-      <article class="interest-card">
-        <span class="num">03</span>
-        <div><h3>Film &amp; music</h3><p>Storytelling, cinematic scores and creative work that changes how something feels.</p></div>
-      </article>
-      <article class="interest-card">
-        <span class="num">04</span>
-        <div><h3>Building</h3><p>Entrepreneurship, independence, writing and turning ideas into things that actually exist.</p></div>
-      </article>
-    </div>
+    <a class="essay-row" href="/ideas/building-my-own-corner-of-the-internet/">
+      <span class="essay-num">03</span>
+      <span class="essay-cat">Personal</span>
+      <div class="essay-title">
+        <h2>Building my own corner of the internet</h2>
+        <p>Why I wanted somewhere that could accumulate as my own body of work rather than disappearing into the companies, platforms and feeds I happen to use.</p>
+      </div>
+      <span class="essay-time">4 min</span>
+    </a>
   </section>
 
-  <section class="about-cta shell">
-    <h2>Work, ideas and everything I’m building next.</h2>
-    <div class="about-cta-links">
-      <a href="/work/">Selected work →</a>
-      <a href="/#ideas">Ideas →</a>
-      <a href="mailto:ilir9641@googlemail.com">Email →</a>
+  <section class="ideas-themes shell">
+    <div class="ideas-themes-head">
+      <div class="label">Themes</div>
+      <h2>The subjects I expect to keep returning to.</h2>
+    </div>
+    <div class="theme-grid">
+      <article class="theme-card">
+        <span>01</span>
+        <div><h3>Crypto, markets &amp; distribution</h3><p>How products reach customers, how behaviour changes and where technology meets incentives and trust.</p></div>
+      </article>
+      <article class="theme-card">
+        <span>02</span>
+        <div><h3>Product, growth &amp; organisations</h3><p>What happens between an idea, a customer proposition and the operating system required to scale it.</p></div>
+      </article>
+      <article class="theme-card">
+        <span>03</span>
+        <div><h3>Things outside work</h3><p>Technology, philosophy, creativity, time and whatever else I am thinking about enough to write down.</p></div>
+      </article>
     </div>
   </section>
 </main>

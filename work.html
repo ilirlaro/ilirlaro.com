@@ -36,7 +36,10 @@ a:hover{opacity:.62}
 button{font:inherit}
 .shell{width:min(calc(100% - (var(--side)*2)),var(--shell));margin-inline:auto}
 .site-header{padding-top:38px}
-.header-inner{height:58px;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--line)}
+.header-inner{
+  min-height:58px;display:flex;align-items:flex-start;justify-content:space-between;
+  border-bottom:1px solid var(--line)
+}
 .wordmark{font-size:14px;font-weight:800;letter-spacing:-.015em}
 .primary-nav{display:flex;gap:42px;font-size:14px;font-weight:500}
 .primary-nav a[aria-current="page"]{font-weight:700}
@@ -213,22 +216,6 @@ footer{padding:62px 0 42px}
   .route-arrow{min-height:30px;transform:rotate(90deg)}
 }
 @media(max-width:640px){
-  /* Match homepage mobile header exactly */
-  .site-header{padding-top:25px}
-  .header-inner{height:48px;min-height:0;align-items:flex-start}
-  .menu-toggle{
-    display:inline-flex;
-    border:0;
-    background:transparent;
-    color:var(--ink);
-    padding:0;
-    margin:0;
-    font-size:13px;
-    font-weight:400;
-    line-height:1.2;
-    cursor:pointer
-  }
-
   :root{--side:18px}
   .site-header{padding-top:24px}
   .header-inner{align-items:flex-start}
