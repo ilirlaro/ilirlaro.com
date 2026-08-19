@@ -549,6 +549,52 @@ a.press-logo:focus-visible {
   .footer-grid { grid-template-columns: 1fr; gap: 16px; }
   .footer-grid > span { text-align: left; }
   .footer-grid nav { justify-content: flex-start; }
+
+  /* Compact mobile Career rows */
+  .career-row {
+    grid-template-columns: 34px minmax(0,1fr) 28px;
+    grid-template-rows: auto auto auto;
+    column-gap: 12px;
+    row-gap: 6px;
+    padding: 24px 0;
+  }
+  .career-date {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin: 0 0 10px;
+  }
+  .career-logo {
+    grid-column: 1;
+    grid-row: 2;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    justify-self: start;
+  }
+  .career-logo.crypto {
+    width: 26px;
+    height: 26px;
+  }
+  .career-company {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    align-self: center;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .career-role {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .career-arrow {
+    grid-column: 3;
+    grid-row: 2 / 4;
+    align-self: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -574,27 +620,39 @@ a.press-logo:focus-visible {
 
 </style>
   <script>
-(() => {
+document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.primary-nav');
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.textContent = open ? 'Close' : 'Menu';
-    });
+  if (!toggle || !nav) return;
 
-    nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = 'Menu';
-      });
-    });
-  }
-})();
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = 'Menu';
+  };
 
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.textContent = open ? 'Close' : 'Menu';
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+});
 </script>
 </head>
 <body>
@@ -619,7 +677,7 @@ a.press-logo:focus-visible {
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">ILIR LARO</h1>
-        <p class="hero-lead">Turning complex financial products into clear go-to-market<br class="desktop-break"><span class="no-break">and growth strategies.</span></p>
+        <p class="hero-lead">Turning complex financial products into clear go-to-market<br class="desktop-break"><span class="no-break"> and growth strategies.</span></p>
         <p class="hero-current">Currently at Crypto.com. Previously Binance, Uphold and Litecoin Foundation.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="/work/">Explore my work</a>
